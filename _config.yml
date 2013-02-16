@@ -1,4 +1,6 @@
-﻿auto: true
 markdown: rdiscount
 pygments: true
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:title
+auto: true
+rdiscount:
+  extensions: [smart]
