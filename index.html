@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Разработка интерфейсов | Сайт Виктора Карпова</title>
+	<meta name="description" content="Верстка сайтов и веб-приложений, Javascript-программирование, HTML5, CSS3" />
+	<meta name="keywords" content="Javascript, джаваскрипт, яваскрипт, HTML5, CSS, CSS3, ЦСС, верстка" />
+
+	<meta http-equiv="X-Powered-By" content="DocPad v6.37.0"/>
+
+	<link  rel="stylesheet" href="/styles/all.min.css" />
+
+	<link rel="shortcut icon" href="/icons/favicon.ico" />
+	<link rel="apple-touch-icon-precomposed" href="icons/apple-touch-icon-57x57-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72x72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114x114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144x144-precomposed.png" />
+
+	<script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'PT Sans Narrow::cyrillic,latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+</head>
+<body class="layout">
+    <!--[if lt IE 7]>
+        <p class="chromeframe">К сожалению, вы пользуетесь устаревшим браузером. Пожалуйста, <a href="http://browsehappy.com/">обновите браузер</a> или <a href="http://www.google.com/chromeframe/?redirect=true">включите Google Chrome Frame</a>.</p>
+    <![endif]-->
+    <div class="layout__map" id="ya-map"></div>
+    <div class="layout__contentWrapper layout__underMap">
+    	<div class="layout__back">
+	    	<div class="layout__wrapper">
+				<header class="layout__head head clearfix">
+					<div class="head__avatar"><img src="/img/avatar.jpg" width="120" height="120" /></div>
+					<div class="head__teaser">
+						Меня зовут Виктор Карпов.<br />Я&nbsp;разработчик <span class="nobr">веб-интерфейсов</span>: верстка, джаваскрипт, node.js, шаблонизаторы, препроцессоры, <span class="nobr">веб-дизайн</span>, плюшки.</div>
+				</header>
+			</div>
+		</div>
+	</div>
+	<footer class="layout__foot foot layout__back layout__underMap">
+		<div class="layout__wrapper foot__text">
+			Сайт сделан с использованием <a href="https://github.com/bevry/docpad" target="_blank">Docpad</a>.<br /> 
+			Исходный код можно <a href="https://github.com/vitkarpov/vitkarpov.github.com" target="_blank">посмотреть на гитхабе</a>.
+		</div>
+	</footer>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+	(function (d, w, c) {
+	    (w[c] = w[c] || []).push(function() {
+	        try {
+	            w.yaCounter21389509 = new Ya.Metrika({id:21389509,
+	                    webvisor:true,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true});
+	        } catch(e) { }
+	    });
+
+	    var n = d.getElementsByTagName("script")[0],
+	        s = d.createElement("script"),
+	        f = function () { n.parentNode.insertBefore(s, n); };
+	    s.type = "text/javascript";
+	    s.async = true;
+	    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+	    if (w.opera == "[object Opera]") {
+	        d.addEventListener("DOMContentLoaded", f, false);
+	    } else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="//mc.yandex.ru/watch/21389509" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+	<script defer="defer"  src="/scripts/all.min.js"></script>
+</body>
+</html>
