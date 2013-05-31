@@ -43,20 +43,37 @@
     <![endif]-->
     <div class="layout__map" id="ya-map"></div>
     <div class="layout__contentWrapper layout__underMap">
-    	<div class="layout__back">
+    	<div class="layout__back layout__back_top">
 	    	<div class="layout__wrapper">
 				<header class="layout__head head clearfix">
+					<nav class="head__contacts contacts">
+						<a href="skype:viktor.s.karpov" class="contacts__item contacts__item_ico_skype link"><span class="link__underline">viktor.s.karpov</span></a>
+						<a href="http://twitter.com/viktorskarpov" class="contacts__item contacts__item_ico_tw link"><span class="link__underline">@viktorskarpov</span></a>
+						<a href="mailto:viktor.s.karpov@gmail.com" class="contacts__item contacts__item_ico_mail link"><span class="link__underline">viktor.s.karpov@gmail.com</span></a>
+					</nav>
 					<div class="head__avatar"><img src="/img/avatar.jpg" width="120" height="120" /></div>
-					<div class="head__teaser">
-						Меня зовут Виктор Карпов.<br />Я&nbsp;разработчик <span class="nobr">веб-интерфейсов</span>: верстка, джаваскрипт, node.js, шаблонизаторы, препроцессоры, <span class="nobr">веб-дизайн</span>, плюшки.</div>
+					<h1 class="layout__caption">Сайт Виктора Карпова</h1>
+					<ul class="head__teaser skills">
+						<li class="skills__item">вёрстка</li>
+						<li class="skills__item">CSS3</li>
+						<li class="skills__item">джаваскрипт</li>
+						<li class="skills__item">jQuery</li>
+						<li class="skills__item">node.js</li>
+						<li class="skills__item">шаблонизаторы</li>
+						<li class="skills__item">препроцессоры</li>
+						<li class="skills__item">веб-дизайн</li>
+					</ul>
 				</header>
 			</div>
 		</div>
 	</div>
-	<footer class="layout__foot foot layout__back layout__underMap">
+	<footer class="layout__foot foot layout__back layout__back_bottom layout__underMap">
 		<div class="layout__wrapper foot__text">
-			Сайт сделан с использованием <a href="https://github.com/bevry/docpad" target="_blank">Docpad</a>.<br /> 
-			Исходный код можно <a href="https://github.com/vitkarpov/vitkarpov.github.com" target="_blank">посмотреть на гитхабе</a>.
+			<div class="foot__share">
+				<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices="vkontakte,facebook,twitter"></div>
+			</div>
+			<span class="foot__copy">&copy; Виктор Карпов, 2013</span>
+			Сайт сделан с использованием <a href="https://github.com/bevry/docpad" target="_blank">Docpad</a>. Исходный код можно <a href="https://github.com/vitkarpov/vitkarpov.github.com" target="_blank">посмотреть на гитхабе</a>.
 		</div>
 	</footer>
 	<!-- Yandex.Metrika counter -->
@@ -86,6 +103,7 @@
 	</script>
 	<noscript><div><img src="//mc.yandex.ru/watch/21389509" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
+	<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
 	<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 	<script defer="defer"  src="/scripts/all.min.js"></script>
 </body>
