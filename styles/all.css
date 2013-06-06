@@ -782,7 +782,7 @@ a {
 }
 .layout {
   background: #f4f4f4 url("../img/layout-bg.jpg") repeat;
-  font: normal 18px/1.4 Arial, sans-serif;
+  font: normal 18px/1.4 'PT Sans Narrow', Arial, sans-serif;
   height: 100%;
   min-width: 1000px;
 }
@@ -834,9 +834,7 @@ a {
 }
 .layout__caption {
   margin: 0 0 0.2em 0;
-}
-.wf-active .layout {
-  font-family: 'PT Sans Narrow';
+  font-weight: 700;
 }
 .head {
   position: relative;
@@ -869,7 +867,7 @@ a {
   margin: 0;
 }
 .link .link__underline {
-  color: #008ace;
+  color: #0080ce;
   border-bottom: 1px solid #b2ccf0;
 }
 .link :hover .link__underline {
@@ -903,6 +901,11 @@ a {
 }
 .contacts__item_ico_mail:before {
   background-position: 0 0;
+}
+@media screen and (max-width: 1080px) {
+  .contacts__item {
+    font-size: 14px;
+  }
 }
 .skills {
   list-style: none;
