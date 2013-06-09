@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>ИннаВатсон / Профиль</title>
+	<link rel="stylesheet" href="css/ui.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/jScrollPane.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+</head>
+<body>
+	<div class="page">
+		<header class="page__header divider" id="js-SF-header"><div class="page__wrapper">
+			<div class="divider__side_rt">
+				<a href="#"><img src="img/logo.png" alt="ИннаВатсон — сложное просто!"></a>
+			</div>
+			<div class="divider__base nav_main__wrapper">
+				<nav class="nav_main divider">
+					<a href="#" class="nav__item">Карта</a>
+					<a href="#" class="nav__item">Устройства</a>
+					<a href="#" class="nav__item nav__item_active">Профиль</a>
+					<a href="#" class="link link__small nav__exit-link">Выход</a>
+				</nav>					
+			</div>
+		</div></header>
+		<!-- //header -->
+
+		<section class="page__content"><div class="page__wrapper" id="js-SF-content">
+			<div class="page__inner">
+
+				<div class="popup">
+					<div class="popup__wrapper">
+						<nav class="popup__header divider">
+							<a href="#" class="popup__close pic pic_cancel" id="js-popup-close"></a>
+							<a href="#" class="popup__header-item popup__header-item_active js-popup-nav" data-count="1">Устройство</a>
+							<a href="#" class="popup__header-item js-popup-nav" data-count="2">История</a>
+							<a href="#" class="popup__header-item js-popup-nav" data-count="3">События</a>	
+						</nav>
+						<div class="divider popup__inner" data-count="1">
+							<div class="popup__content">
+								<div class="divider__side popup__avatar">
+									<img src="img/devices/demo.jpg" alt="Мишка">
+								</div>
+								<div class="divider__base">
+									<div class="divider__side_rt">
+										<div class="popup__charge">67%</div>
+									</div>
+									<div class="divider__base popup__content_hide">
+										<p>Мишка</p> 
+										<p class="article__status_false">Выключено</p>
+										<p>Скорость: 4 км/ч</p> 
+										<p>Последняя передача данных: <span class="article__status_true">27 дн. назад</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="divider popup__inner" data-count="2">
+							<div class="popup__content">
+								<p class="i-indent">За предыдущий период:</p>
+								<form action="">
+									<fieldset class="divider form__line">
+										<label class="divider__side popup__period-label"><input type="radio" />1 час</label>
+										<label class="divider__side popup__period-label"><input type="radio" />24 часа (сутки)</label>
+										<label class="divider__side popup__period-label"><input type="radio" />12 часов (день)</label>
+										<label class="divider__side popup__period-label"><input type="radio" />72 час (двое суток)</label>
+									</fieldset>
+									<fieldset class="divider form__line">
+										<div class="divider__side_rt"> 									
+											<span class="button button_red">
+												<span class="button__text">Показать</span><input type="submit" value="Показать">
+											</span>
+										</div>	
+										<div class="divider__base"> 	
+											<p class="article__callout">
+												На открывающейся временной шкале вы сможете точнее настроить период
+											</p>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						<div class="divider popup__inner" data-count="3">
+							<div class="popup__content_wide">
+								<div class="popup__scroll-wrapper js-scrollPane js-scrollPane_vertical">
+									<table class="table table__events table__events_popup">
+										<tr>
+											<td>25.06</td>
+											<td>15:35</td>
+											<td>Нажата тревожная кнопка</td>
+										</tr>
+										<tr>
+											<td>23.06</td>
+											<td>10:12</td>
+											<td>Несанкционированный доступ к секретному устройству в сумочке жены!</td>
+										</tr>
+										<tr>
+											<td>21.06.2012</td>
+											<td>17:00</td>
+											<td>Мишка-панда на прогулке</td>
+										</tr>
+										<tr>
+											<td>23.06</td>
+											<td>10:12</td>
+											<td>Несанкционированный доступ к секретному устройству в сумочке жены!</td>
+										</tr>
+										<tr>
+											<td>21.06.2012</td>
+											<td>17:00</td>
+											<td>Мишка-панда на прогулке</td>
+										</tr>
+									</table>
+								</div>
+								<div class="divider form__line">
+									<div class="divider__side_rt"> 									
+										<span class="button button_red">
+											<span class="button__text">Все события</span><input type="button" value="Все события">
+										</span>
+									</div>	
+									<div class="divider__base"> 	
+										<p class="article__callout article__callout_hide">
+											Показаны 5 последних событий устройства
+										</p>
+									</div>	
+								</div>
+							</div>
+						</div>	
+					</div>		
+				</div>
+
+				<div id="YMapsID" style="width:100%; height:500px;"></div>
+			</div></section>
+		<!-- //content -->
+		
+	</div>
+	<footer class="page__footer" id="js-SF-footer">
+		<div class="page__wrapper">
+			<div class="page__footer_inner">
+				<div class="timeline-outer">
+			<div class="timeline-info">
+				<div class="close-timeline"><a href="#">Скрыть трек <i class="ico ico-close-timeline"></i></a></div>
+				<div class="fl-left">Скрытое устройство в сумочке жены: История <a href="#" class="timeline-caution"><i class="ico ico-caution"></i></a>
+					<span class="timeline-borders-label">Границы периодов активности:</span>
+					<span class="busy-period"><i class="ico ico-prev-period"></i>20.09</span> &ndash; <span class="busy-period">30.09<i class="ico ico-next-period"></i></span></div>
+			</div>
+			<div class="timeline-grid clearfix">
+				<div class="timeline-date timeline-date-begin">
+					<a href="#"><span><b>31.09</b></span><br/><span>23:23</span><i class="ico ico-timeline-date"></i></a>
+				</div>
+				<div class="timeline-date timeline-date-end">
+					<a href="#"><span><b>26.10</b></span><br/><span>05:09</span><i class="ico ico-timeline-date"></i></a>
+				</div>
+				<div class="timeline-inner clearfix">
+					<!-- координаты прописаны в css только для наглядности, позиционирование происходит через CSS -->
+					<div class="timeline-outer-border">
+						<div class="ico timeline-handler" style="left: 73%"></div>
+
+						<!--  -->
+						<ul class="time-periods">
+							<li class="time-period time-period-disabled" style="width: 5%; left: 0"></li>
+							<li class="time-period time-period-enabled" style="width: 15%; left: 5%"></li>
+							<li class="time-period time-period-parking" style="width: 36%; left: 19.9%"></li>
+							<li class="time-period time-period-enabled" style="width: 21%; left: 55%"></li>
+							<li class="time-period time-period-parking" style="width: 10%; left: 75%"></li>
+							<li class="time-period time-period-disabled" style="width: 15%; left: 85%"></li>
+						</ul>
+
+						<ul class="time-labels">
+							<li class="time-label" style="left: 16.6%">12:00</li>
+							<li class="time-label" style="left: 33.2%">15:00</li>
+							<li class="time-label" style="left: 49.8%">18:00</li>
+							<li class="time-label" style="left: 66.4%">0:00</li>
+							<li class="time-label" style="left: 83%">3:00</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<div class="timeline-legend-container">
+				<ul class="timeline-legend">
+					<li class="legend-item"><i class="legend-marker legend-marker-enabled"></i><span class="legend-text">устройство включено</span></li>
+					<li class="legend-item"><i class="legend-marker legend-marker-parking"></i><span class="legend-text">парковка</span></li>
+					<li class="legend-item"><i class="legend-marker legend-marker-disabled"></i><span class="legend-text">устройство выключено</span></li>
+				</ul>
+				<p class="timeline-history">Максимальный непрерывный период истории: <span class="timeline-htime">72 часа (3 суток)</span></p>
+			</div>
+		</div>
+			</div>
+		</div>
+	</footer>
+	<!-- // sticky footer -->	
+		<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/jScrollPane.js"></script>
+	<script type="text/javascript" src="js/iv.js"></script>
+	<script src="http://api-maps.yandex.ru/1.1/index.xml?key=AHDL-U8BAAAAmV94egMBkuxKJ8wYqdytrkyyPPAOhGLLS88AAAAAAAAAAACu-d8Tki2wKvUWP_xzvCzY2UIEGw=="
+	type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var map = new YMaps.Map(document.getElementById("YMapsID"));
+            map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 10);
+        }
+    </script>
+</body>
+</html>	

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+    <title>Раскрывашка .i-expand</title>
+
+    <!--default-->
+        <link rel="stylesheet" href="../../_default/demo/demo.css">
+        <!--[if lt IE 9 ]><link rel="stylesheet" href="../../_default/demo/demo.ie.css"><![endif]-->
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+    <!---->
+
+
+    <!--Основа-->
+        <link rel="stylesheet" href="i-expand.css">
+        <script src="i-expand.js"></script>
+    <!---->
+
+
+    <!--Дополнительно-->
+        <link rel="stylesheet" href="../../b-/b-pin/b-pin.css">
+        <!--[if lt IE 8 ]><link rel="stylesheet" href="../../b-/b-pin/b-pin.ie.css"><![endif]-->
+
+        <link rel="stylesheet" href="../../b-/b-pic/b-pic.css">
+        <!--[if lt IE 8 ]><link rel="stylesheet" href="../../b-/b-pic/b-pic.ie.css"><![endif]-->
+
+        <link rel="stylesheet" href="../../b-/b-grid/b-grid.css">
+        <link rel="stylesheet" href="../../b-/b-grid/__cell/b-grid__cell_1-2.css">
+        <!--[if lt IE 8 ]><link rel="stylesheet" href="../../b-/b-grid/b-grid.ie.css"><![endif]-->
+    <!---->
+
+
+</head>
+<body>
+
+
+<div class="b-demo b-demo-article">
+
+    <h1>Раскрывашка .i-expand</h1>
+
+    <div class="b-demo__area">
+
+        <p>Вешаем <code><span class="b-article__b">.i-expand</span><span class="b-article__e">__data</span></code> на область, которая будет "скрываться-раскрываться" и <code><span class="b-article__b">.i-expand</span><span class="b-article__e">__tick</span></code> на элемент при нажатии на который будет происходить действие.
+
+
+    <!-- .b-pseudo-link -->
+
+    <style>
+        .b-pseudo-link {border-bottom:1px dotted;text-decoration:none;}
+        .b-pseudo-link:hover,.b-pseudo-link:focus {border-bottom:0;text-decoration:none !important;}
+        .i-no-js .b-pseudo-link {border:0;text-decoration:underline;}
+    </style>
+
+        <div class="i-expand">
+            <a class="b-pseudo-link i-expand__tick" href="javascript:void(0)">Открыть</a>
+            <div class="i-expand__data">
+                <span class="i-expand">
+                    What in Babylon? Faster! We'll die, won't we? I should think so.
+                    Although last time aliens invaded… they forced the most intelligent of us to pair off and mate continuously.
+                    Once again, today's winning lotto number was four. Alien saucers continue to rain destruction upon Earth.
+                    <a class="b-pseudo-link i-expand__tick" href="javascript:void(0)">Открыть</a>
+                    <span class="i-expand__data">
+                        We go live to an emergency address by Earth President McNeal. Ladies and gentlemen, our course is clear.
+                        It's time to knuckle under. Get down on all fours and lick boot. Give our alien masters whatever they- People of Earth.
+                    </span>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="b-demo__area">
+
+        <h2>Примеры использования</h2>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-2">
+
+                <h3>Кнопка</h3>
+                <p><code class="b-article__b">.b-pin</code> | <code class="b-article__b">.i-expand</code></p>
+
+                <!-- .b-pin -->
+
+                <style>
+
+            .b-pin_default {
+                padding: 4px 15px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+                border:1px solid #ddd;
+                border-color: rgba(255,255,255,0.8) rgba(0, 0, 0, 0.07) rgba(0, 0, 0, 0.246094)  rgba(0, 0, 0, 0.07);
+
+                background: #E5E5E5;
+
+                -webkit-box-shadow:#ddd 0 1px 1px;
+                -moz-box-shadow:#ddd 0 1px 1px;
+                box-shadow:#ddd 0 1px 1px;
+                color: #525252;
+                background-image: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#dcdcdc));
+                background-image: -webkit-linear-gradient(top, #ededed, #dcdcdc);
+                background-image: -moz-linear-gradient(top, #ededed, #dcdcdc);
+                background-image: -o-linear-gradient(top, #ededed, #dcdcdc);
+                background-image: linear-gradient(top, #ededed, #dcdcdc);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ededed', EndColorStr='#dcdcdc');
+
+
+                text-shadow: 0 1px #fff;
+
+            }
+
+            .b-pin_default_on,.b-pin:active {
+                padding-top: 5px;
+                padding-bottom: 3px;
+
+                box-shadow: 0 1px 1px #fff, inset 0 1px 1px rgba(0,0,0,.3) inset;
+                border: 1px solid rgba(0,0,0,.2);
+                border-bottom: 1px solid rgba(0,0,0,.1);
+
+            }
+
+                </style>
+
+                <script>
+                    $(document).ready(function(){
+                        $('.b-pin_default').click(function(){
+
+                            $(this).toggleClass('b-pin_default_on');
+
+                        });
+                    });
+                </script>
+
+
+                <div class="i-expand">
+                    <a class="b-pin b-pin_default i-expand__tick i-indent" href="javascript:void(0)">Открыть</a>
+                    <div class="i-expand__data">
+                        What in Babylon? Faster! We'll die, won't we? I should think so.
+                        Although last time aliens invaded… they forced the most intelligent of us to pair off and mate continuously.
+                        Once again, today's winning lotto number was four. Alien saucers continue to rain destruction upon Earth.
+                    </div>
+                </div>
+
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-2">
+
+                        <h3>Картинка</h3>
+                        <p><code class="b-article__b">.b-pic</code> | <code class="b-article__b">.i-expand</code></p>
+
+
+                        <style>
+
+                            .b-pic_expand {
+                                padding-left: 12px;
+                            }
+
+                            .b-pic_expand:before,
+                            .b-pic_expand .ie-before {
+                                content: '';
+
+                                width: 20px;
+                                height: 19px;
+                                left: -8px;
+                                position: absolute;
+                            }
+
+                            *+html .b-pic_expand .ie-before {top:0;}
+                            *html .b-pic_expand .ie-before {top:0;left: -19px;}
+
+                             .b-pic_expand:before {background-position:-109px -170px;}
+                            .b-pic_expand .ie-before ins {left:-109px;top:-170px;}
+
+                            .b-pic_expand_on:before {background-position:-109px -189px;}
+                            .b-pic_expand_on .ie-before ins {left:-109px;top: -189px;}
+
+
+                            .b-infos {
+                                background: #fff0c0;
+                                padding: 5px 15px 3px 15px;
+                                border-radius: 3px;
+                                border-bottom: 1px solid #ddd;
+                                line-height: 1.7em;
+                            }
+
+                            .b-infos__head {
+                                color: #3d3d3d;
+                                text-decoration: none;
+                                display: block;
+                                position:relative;
+                                padding: 2px 0 2px 11px;
+                            }
+
+                        </style>
+
+                        <script>
+                            $(document).ready(function(){
+
+                                $('.b-pic_expand').click(function(){
+
+                                    $(this).toggleClass('b-pic_expand_on');
+
+                                });
+
+                            });
+                        </script>
+
+                        <div class="b-infos i-expand">
+                            <a class="b-infos__head i-expand__tick b-pic b-pic_expand" href="javascript:void(0)">Показать все что скрыто</a>
+
+                            <div class="i-expand__data">
+                                Aren't you getting this? A vessel is attempting to break the security cordon around Vergon 6. I'm anticipating a tactical dogfight, followed by a light dinner. Ravioli, ham, sundae bar. Hey, look! Zapp Brannigan's ship. Wow! The Zapp Brannigan? Who's the Zapp Brannigan? Shall I fire on them now, sir? In the game of chess, never let your adversary see your pieces. Zapp Brannigan alone saved the Octillion System… from rampaging Killbots. A grim day for robot-kind. But we can build more Killbots! He's the most decorated captain in the Order of Planets.
+                            </div>
+
+                        </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

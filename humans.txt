@@ -3,11 +3,8 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Vit Karpov -- developer, designer, owner -- @viktorskarpov
 
-# THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 

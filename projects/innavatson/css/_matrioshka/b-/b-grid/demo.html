@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+    <title>Модульная сетка .b-grid</title>
+
+
+    <!--default-->
+        <link rel="stylesheet" href="../../_default/demo/demo.css">
+        <!--[if lt IE 9 ]><link rel="stylesheet" href="../../_default/demo/demo.ie.css"><![endif]-->
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+    <!---->
+
+
+    <!--Основа-->
+    <link rel="stylesheet" href="b-grid.css">
+    <!--[if lt IE 8 ]><link rel="stylesheet" href="b-grid.ie.css"><![endif]-->
+    <!---->
+
+    <!--Модификации-->
+    <link rel="stylesheet" href="__cell/b-grid__cell_1-1.css">
+
+    <link rel="stylesheet" href="__cell/b-grid__cell_1-2.css">
+
+    <link rel="stylesheet" href="__cell/b-grid__cell_1-3.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_2-3.css">
+
+    <link rel="stylesheet" href="__cell/b-grid__cell_1-4.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_3-4.css">
+
+    <link rel="stylesheet" href="__cell/b-grid__cell_1-5.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_2-5.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_3-5.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_4-5.css">
+
+    <link rel="stylesheet" href="__cell/b-grid__cell_1-6.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_5-6.css">
+
+    <link rel="stylesheet" href="__cell/b-grid__cell_1-8.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_3-8.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_5-8.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_7-8.css">
+
+    <link rel="stylesheet" href="__cell/b-grid__cell_1-12.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_5-12.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_7-12.css">
+    <link rel="stylesheet" href="__cell/b-grid__cell_11-12.css">
+
+    <!---->
+
+    <!--Т.к. IE  не поддерживает слишком много link подключений-->
+    <style>
+        .b-grid__cell_1-24 {width: 4.1666%;}
+        .b-grid__cell_5-24 {width: 20.8333%;}
+        .b-grid__cell_5-24 {width: 20.8333%;}
+        .b-grid__cell_7-24 {width: 29.1666%;}
+        .b-grid__cell_11-24 {width: 45.8333%;}
+        .b-grid__cell_13-24 {width: 54.1666%;}
+        .b-grid__cell_17-24 {width: 70.8333%;}
+        .b-grid__cell_19-24 {width: 79.1666%;}
+        .b-grid__cell_23-24 {width: 95.8333%;}
+    </style>
+    <!---->
+
+
+
+    <!--Дополнительные стили для демки-->
+        <link rel="stylesheet" href="../b-pic/b-pic.css">
+        <!--[if lt IE 8 ]><link rel="stylesheet" href="../b-pic/b-pic.ie.css"><![endif]-->
+
+        <link rel="stylesheet" href="../../i-/i-expand/i-expand.css">
+        <script src="../../i-/i-expand/i-expand.js"></script>
+        <style>
+
+            .b-pic_expand:before,
+            .b-pic_expand .ie-before {
+                content: '';
+
+                width: 17px;
+                height: 17px;
+                margin-right: 5px;
+                margin-top: -3px;
+            }
+
+            .b-pic_expand:before {background-position:-182px -170px;}
+            .b-pic_expand .ie-before ins {left:-182px;top:-170px;}
+
+        </style>
+    <!---->
+
+
+
+
+</head>
+<body>
+
+
+
+<div class="b-demo b-demo-article">
+
+    <h1>Модульная сетка .b-grid</h1>
+
+
+    <div class="b-example">
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-1">
+                <div class="b-example__block">1-1</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_23-24">
+                <div class="b-example__block">23-24</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-24">
+                <div class="b-example__block">1</div>
+            </div>
+        </div>
+
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_11-12">
+                <div class="b-example__block">11-12</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-12">
+                <div class="b-example__block">1-12</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_7-8">
+                <div class="b-example__block">7-8</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-8">
+                <div class="b-example__block">1-8</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_5-6">
+                <div class="b-example__block">5-6</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_19-24">
+                <div class="b-example__block">19-24</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_5-24">
+                <div class="b-example__block">5-24</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_3-4">
+                <div class="b-example__block">3-4</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-4">
+                <div class="b-example__block">1-4</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_17-24">
+                <div class="b-example__block">17-24</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_7-24">
+                <div class="b-example__block">7-24</div>
+            </div>
+        </div>
+
+
+
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_2-3">
+                <div class="b-example__block">2-3</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-3">
+                <div class="b-example__block">1-3</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_3-5">
+                <div class="b-example__block">3-5</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_2-5">
+                <div class="b-example__block">2-5</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_13-24">
+                <div class="b-example__block">13-24</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_11-24">
+                <div class="b-example__block">11-24</div>
+            </div>
+        </div>
+
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-2">
+                <div class="b-example__block">1-2</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-2">
+                <div class="b-example__block">1-2</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-3">
+                <div class="b-example__block">1-3</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-3">
+                <div class="b-example__block">1-3</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-3">
+                <div class="b-example__block">1-3</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-4">
+                <div class="b-example__block">1-4</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-4">
+                <div class="b-example__block">1-4</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-4">
+                <div class="b-example__block">1-4</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-4">
+                <div class="b-example__block">1-4</div>
+            </div>
+        </div>
+
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-5">
+                <div class="b-example__block">1-5</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-5">
+                <div class="b-example__block">1-5</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-5">
+                <div class="b-example__block">1-5</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-5">
+                <div class="b-example__block">1-5</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-5">
+                <div class="b-example__block">1-5</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-5">
+                <div class="b-example__block">1-5</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_2-5">
+                <div class="b-example__block">2-5</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_2-5">
+                <div class="b-example__block">2-5</div>
+            </div>
+        </div>
+
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-8">
+                <div class="b-example__block">1-8</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_3-8">
+                <div class="b-example__block">3-8</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-8">
+                <div class="b-example__block">1-8</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_3-8">
+                <div class="b-example__block">3-8</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_3-8">
+                <div class="b-example__block">3-8</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_5-8">
+                <div class="b-example__block">5-8</div>
+            </div>
+        </div>
+
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-12">
+                <div class="b-example__block">1-12</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_5-12">
+                <div class="b-example__block">5-12</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-12">
+                <div class="b-example__block">1-12</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_5-12">
+                <div class="b-example__block">5-12</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_5-12">
+                <div class="b-example__block">5-12</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_7-12">
+                <div class="b-example__block">7-12</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-24">
+                <div class="b-example__block">1</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_5-24">
+                <div class="b-example__block">5-24</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_7-24">
+                <div class="b-example__block">7-24</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_11-24">
+                <div class="b-example__block">11-24</div>
+            </div>
+        </div>
+
+    </div>
+
+
+   <div class="b-info i-expand i-indent">
+        <a class="b-info__head i-expand__tick b-pic b-pic_expand" href="javascript:void(0)">Отступы между ячейками</a>
+        <div class="b-info__data i-expand__data">
+
+            <p>Отступы между ячейками <span class="b-article__b">.b-grid</span><span class="b-article__e">__cell</span> задаются не самим ячейкам, а элементам внутри них. Можно свободно задавать отступы и в процентах и в пикселях.
+
+            <p>Например, мы хотим сделать отступ между ячейками в 5%
+
+            <p><b>HTML</b>
+
+<pre>
+&#60;div class="<span class="b-article__b">b-grid</span>"&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       1-4
+   &#60;/div&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       1-4
+   &#60;/div&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       1-4
+   &#60;/div&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       1-4
+   &#60;/div&#62;
+&#60;/div&#62;</pre>
+
+<p>Создаем новый блок <span class="b-article__b">.b-example</span> и внутри ячейки <span class="b-article__b">.b-grid</span><span class="b-article__e">__cell</span> элемент <span class="b-article__b">.b-example</span><span class="b-article__e">__block</span> и задаем этому элементу отступ слева в 5%
+
+            <p><b>HTML</b>
+<pre>
+&#60;div class="<span class="b-article__b">b-grid</span> <span class="b-article__b">b-example</span>"&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       &#60;div class="<span class="b-article__b">b-example</span><span class="b-article__e">__block</span>"&#62;1-4&#60;/div&#62;
+   &#60;/div&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       &#60;div class="<span class="b-article__b">b-example</span><span class="b-article__e">__block</span>"&#62;1-4&#60;/div&#62;
+   &#60;/div&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       &#60;div class="<span class="b-article__b">b-example</span><span class="b-article__e">__block</span>"&#62;1-4&#60;/div&#62;
+   &#60;/div&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       &#60;div class="<span class="b-article__b">b-example</span><span class="b-article__e">__block</span>"&#62;1-4&#60;/div&#62;
+   &#60;/div&#62;
+&#60;/div&#62;</pre>
+
+            <p><b>CSS</b>
+<pre>
+<span class="b-article__b">.b-example</span><span class="b-article__e">__block</span> {
+    margin-left: 5%;
+}
+</pre>
+
+    <p>Теперь между каждым элементом <span class="b-article__b">.b-example</span><span class="b-article__e">__block</span> есть отступ в 5%, но у первого элемента он нам не нужен.
+
+    <p>Для того чтобы компенсировать отступ первого элемента прописываем на блоке <span class="b-article__b">.b-example</span> отступ слева margin-left: -5%;
+
+            <p><b>HTML</b>
+<pre>
+&#60;div class="<span class="b-article__b">b-grid</span> <span class="b-article__b">b-example</span>"&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       &#60;div class="<span class="b-article__b">b-example</span><span class="b-article__e">__block</span>"&#62;1-4&#60;/div&#62;
+   &#60;/div&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       &#60;div class="<span class="b-article__b">b-example</span><span class="b-article__e">__block</span>"&#62;1-4&#60;/div&#62;
+   &#60;/div&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       &#60;div class="<span class="b-article__b">b-example</span><span class="b-article__e">__block</span>"&#62;1-4&#60;/div&#62;
+   &#60;/div&#62;
+   &#60;div class="<span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span> <span class="b-article__b">b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-4</span>"&#62;
+       &#60;div class="<span class="b-article__b">b-example</span><span class="b-article__e">__block</span>"&#62;1-4&#60;/div&#62;
+   &#60;/div&#62;
+&#60;/div&#62;</pre>
+
+            <p><b>CSS</b>
+
+<pre>
+<span class="b-article__b">.b-example</span> {
+   margin-left: -5%;
+}
+
+<span class="b-article__b">.b-example</span><span class="b-article__e">__block</span> {
+    margin-left: 5%;
+}
+</pre>
+Все готово, отступы между ячейками <span class="b-article__b">.b-grid</span><span class="b-article__e">__cell</span> равны 5% и при этом они выровнены по правому и левому краю.
+
+        </div>
+    </div>
+
+    <h3>Вложенность</h3>
+
+    <div class="b-example">
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-2">
+                <div class="b-example__block">1-2</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-2">
+
+                <div class="b-grid">
+                    <div class="b-grid__cell b-grid__cell_1-3">
+
+                        <div class="b-grid">
+                            <div class="b-grid__cell b-grid__cell_1-2">
+                                <div class="b-example__block">1-2</div>
+                            </div>
+                            <div class="b-grid__cell b-grid__cell_1-2">
+                                <div class="b-example__block">1-2</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-3">
+                        <div class="b-example__block">1-3</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-3">
+                        <div class="b-example__block">1-3</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-3">
+                        <div class="b-example__block">1-3</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-3">
+                        <div class="b-example__block">1-3</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-3">
+                        <div class="b-example__block">1-3</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="b-note i-indent">* Помните что опера неправильно обрабатывает дробные значения свойств, некоторые сетки могут отображаться некорректно.</div>
+
+
+
+    <h3>mix</h3>
+    <p>Cмешивание разных модификаций.</p>
+
+    <div class="b-example i-indent">
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-4">
+                <div class="b-example__block">1-4</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-2">
+                <div class="b-example__block">1-2</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-4">
+                <div class="b-example__block">1-4</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-8">
+                <div class="b-example__block">1-8</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-2">
+                <div class="b-example__block">1-2</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-8">
+                <div class="b-example__block">1-8</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-4">
+                <div class="b-example__block">1-4</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-3">
+                <div class="b-example__block">1-3</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_7-24">
+                <div class="b-example__block">7-24</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-24">
+                <div class="b-example__block">1</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-3">
+                <div class="b-example__block">1-3</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-4">
+                <div class="b-example__block">1-4</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_5-12">
+                <div class="b-example__block">5-12</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_3-8">
+                <div class="b-example__block">3-8</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-24">
+                <div class="b-example__block">1</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_7-24">
+                <div class="b-example__block">7-24</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-8">
+                <div class="b-example__block">1-8</div>
+            </div>
+        </div>
+
+        <div class="b-grid">
+            <div class="b-grid__cell b-grid__cell_1-8">
+                <div class="b-example__block">1-8</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_5-12">
+                <div class="b-example__block">5-12</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-8">
+                <div class="b-example__block">1-8</div>
+            </div>
+            <div class="b-grid__cell b-grid__cell_1-6">
+                <div class="b-example__block">1-6</div>
+            </div>
+        </div>
+
+    </div>
+<div class="b-info i-expand i-indent">
+        <a class="b-info__head i-expand__tick b-pic b-pic_expand" href="javascript:void(0)">Сокращенная нотация</a>
+        <div class="b-info__data i-expand__data">
+Для блока можно использовать сокращенную нотацию, пример:
+
+<pre>
+<span class="b-article__b">.b-grid</span>            => <span class="b-article__b">.b-g</span>
+<span class="b-article__b">.b-grid</span><span class="b-article__e">__cell</span>      => <span class="b-article__b">.b-g</span><span class="b-article__e">__c</span> {}
+<span class="b-article__b">.b-grid</span><span class="b-article__e">__cell</span><span class="b-article__m">_1-2</span>  => <span class="b-article__b">.b-g</span><span class="b-article__e">__c</span><span class="b-article__m">_1-2</span> {}
+</pre>
+        </div>
+    </div>
+
+
+    <h2>Примеры использования</h2>
+
+    <h3>layout</h3>
+
+    <div class="b-grid b-example">
+
+        <div class="b-grid__cell b-grid__cell_1-6">
+            <div class="b-example__block">logo</div>
+        </div>
+        <div class="b-grid__cell b-grid__cell_1-2">
+            <div class="b-example__block">banner</div>
+        </div>
+        <div class="b-grid__cell b-grid__cell_1-6">
+            <div class="b-example__block">phone</div>
+        </div>
+        <div class="b-grid__cell b-grid__cell_1-6">
+            <div class="b-example__block">e-mail</div>
+        </div>
+
+
+        <div class="b-grid__cell b-grid__cell_2-3">
+            <div class="b-example__block">
+
+                <div class="b-demo__example i-indent">content</div>
+
+                <div class="b-grid b-example">
+                    <div class="b-grid__cell b-grid__cell_1-4">
+                        <div class="b-example__block"><img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">item</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-4">
+                        <div class="b-example__block"><img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">item</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-4">
+                        <div class="b-example__block"><img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">item</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-4">
+                        <div class="b-example__block"><img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">item</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-4">
+                        <div class="b-example__block"><img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">item</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-4">
+                        <div class="b-example__block"><img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">item</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-4">
+                        <div class="b-example__block"><img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">item</div>
+                    </div>
+                    <div class="b-grid__cell b-grid__cell_1-4">
+                        <div class="b-example__block"><img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">item</div>
+                    </div>
+                </div>
+
+                <div class="b-demo__example">text</div>
+
+            </div>
+        </div>
+        <div class="b-grid__cell b-grid__cell_1-3">
+            <div class="b-example__block">aside</div>
+        </div>
+        <div class="b-grid__cell b-grid__cell_1-3">
+            <div class="b-example__block">sub info</div>
+        </div>
+        <div class="b-grid__cell b-grid__cell_1-3">
+            <div class="b-example__block">sub info</div>
+        </div>
+        <div class="b-grid__cell b-grid__cell_1-3">
+            <div class="b-example__block">sub info</div>
+        </div>
+        <div class="b-grid__cell b-grid__cell_1-1">
+            <div class="b-grid">
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+                <div class="b-grid__cell b-grid__cell_1-12">
+                    <div class="b-example__block">item</div>
+                </div>
+            </div>
+        </div>
+        <div class="b-grid__cell b-grid__cell_1-1">
+            <div class="b-example__block">footer</div>
+        </div>
+    </div>
+
+
+    <h3>text</h3>
+
+    <div class="b-grid b-example">
+        <div class="b-grid__cell b-grid__cell_1-5">
+            <div class="b-example__block"><b>1/5</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+        <div class="b-grid__cell b-grid__cell_3-5">
+
+            <div class="b-grid">
+                <div class="b-grid__cell b-grid__cell_1-2">
+                <div class="b-example__block"><b>1-2</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div></div>
+                <div class="b-grid__cell b-grid__cell_1-2">
+                <div class="b-example__block"><b>1-2</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div> </div>
+            </div>
+
+            <div class="b-grid">
+                <div class="b-grid__cell b-grid__cell_1-3">
+                <div class="b-example__block"><b>1-3</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
+                <div class="b-grid__cell b-grid__cell_2-3">
+
+                    <div class="b-grid">
+                        <div class="b-grid__cell b-grid__cell_1-2">
+                        <div class="b-example__block"><b>1-2</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div></div>
+                        <div class="b-grid__cell b-grid__cell_1-2">
+                        <div class="b-example__block"><b>1-2</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div></div>
+                        <div class="b-grid__cell b-grid__cell_1-1">
+                        <div class="b-example__block"><b>1-1</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div></div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="b-grid__cell b-grid__cell_1-5">
+            <div class="b-example__block"><b>1-5</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

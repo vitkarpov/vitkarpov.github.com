@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Аквапарк — море веселья!</title>
+	
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	
+	<!-- jQuery 1.7.1 from Google Libs -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/backgroundPosition.js" type="text/javascript"></script>
+	<!-- Parallax -->
+	<!--<script type="text/javascript" src="js/jquery.scrolling-parallax.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax-0.2.js"></script>-->
+	
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			
+			$.fn.parallax = function(options) {
+				
+				var current = $(this),
+					offset = current.offset(),
+					defaults = {
+						'start' : 0,
+						'top': offset.top,
+						'stop' : offset.top + current.height(),
+						'coeff' : 0.5,
+						'direction' : 'y',
+						'negative': false
+					},
+					settings = $.extend(defaults, options);
+				
+				$(window).bind("scroll", function() {
+						
+					wt = $(window).scrollTop();
+						
+					if((wt >= settings.start) && (wt <= settings.stop)) {
+						
+						var pos = (wt - settings.top) * settings.coeff;
+						
+						if(!settings.negative && pos < 0) {
+							pos = 0;
+						}
+							
+						switch(settings.direction) {			
+							
+							case "y":
+							
+								current.stop(true, true);
+							
+								current.animate({
+									backgroundPosition: '50% ' + pos
+								}, 300);
+							
+								/*current.css({
+									"background-position" : "50% " + pos + "px"
+								});*/
+							break;
+								
+							case "x":
+								current.css({
+									"background-position" : pos + "px 0"
+								});
+							break;
+									
+						}
+					}
+				});
+			};
+		});
+
+	</script>
+	
+	
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery.backgroundPosition.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!--[if lt IE 8]>
+		<style type="text/css">
+			.b-main-menu {
+				z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', '<a class="b-main-menu_item__last"></a>'));
+			}
+			.b-main-menu .b-main-menu_item__last {
+				margin-left: 100%;
+			}
+			* html .b-main-menu { /* need ie6 only */
+				height: 30px;
+			}
+		</style>
+	<![endif]-->
+	
+</head>
+<body>
+<div id="aqua">
+	<header id="header">
+		<nav id="js-main-menu" class="b-main-menu">
+			<a href="#first" class="b-main-menu_item b-main-menu_item__active"><span class="b-link">Аквапарк</span></a>
+			<a href="#second" class="b-main-menu_item"><span class="b-link">Галерея</span></a>
+			<a href="#third" class="b-main-menu_item"><span class="b-link">Игровая зона</span></a>
+			<a href="#fourth" class="b-main-menu_item"><span class="b-link">Термозона</span></a>
+			<a href="#" class="b-main-menu_item"><span class="b-link">Магазины</span></a>
+			<a href="#" class="b-main-menu_item"><span class="b-link">Рестораны</span></a>
+		</nav>
+	</header>
+	<section id="first">
+		<div id="wave">
+			<h1 id="logo">Аквапарк «H2O»</h1>
+			<div id="bubbles">
+				<h2 class="b-head">Аквапарк — море веселья, от 8 до 80!</h2>	
+				<p class="b-description">
+					Аквапарк «H2O» — центр досуга граждан, предоставляющий особый комплекс бассейнов, водных горок и аттракционов, ресторанов и кафе, 
+					торговых галерей и уютных магазинчиков, рассчитанный на ежедневную круглогодичную эксплуатацию. 
+					Общий объем комплекса составляет 15 000 м<sup>2</sup> и разделяется на две композиционно-архитектурных зоны: спортивно-оздоровительную и развлекательную. 
+				</p>
+				<p class="b-address">
+					г. Ростов-на-Дону, пр. Михаила Нагибина 32/2, водный спортивно-развлекательный комплекс «H2O» <br />
+					<b>8 800 200 19 25 | (863) 219 55 55</b>&nbsp;&nbsp;—&nbsp;&nbsp;круглосуточно, звонок бесплатный.
+				</p>
+				<a href="#" class="b-plunge"><span class="b-link b-link__dashed">Окунуться</span></a>
+			</div>
+		</div>	
+	</section>
+	<section id="second">
+		<div id="blue-light">
+			<div id="gallery-wrap">
+				<div class="wrapper">
+					<h2 class="b-head">Галерея</h2>
+				</div>
+				<div id="gallery">
+					<div id="viewport">
+						<ul>
+							<li>
+								<table>
+									<tr>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo1.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo2.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo3.jpg" alt="" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo4.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo5.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo6.jpg" alt="" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo7.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo8.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo9.jpg" alt="" /></a></td>
+									</tr>
+								</table>
+							</li>
+							<li>
+								<table>
+									<tr>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo1.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo2.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo3.jpg" alt="" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo4.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo5.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo6.jpg" alt="" /></a></td>
+									</tr>
+									<tr>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo7.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo8.jpg" alt="" /></a></td>
+										<td><a href="#"><div class="js-roll"><span>Внешний вид аквапарка</span></div><img src="img/gallery/photo9.jpg" alt="" /></a></td>
+									</tr>
+								</table>
+							</li>
+						</ul>						
+					</div>
+					<div id="nav">						
+					</div>
+					<div id="big-image">
+						<img src="img/dummy/big-image.jpg" />
+						<a href="#" id="close">Закрыть</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="third">
+		<div id="blue-light">
+			<div id="bubbles">
+				<div id="slippers">
+					<div class="wrapper">
+						<div id="ball"></div>
+						<h2 class="b-head fl">Игровая зона</h2>
+						<div class="b-description">
+							<h3 class="b-description_head b-description_head__hr">Захватывающие дух горки на&nbsp;любой вкус!</h3>
+							<p>
+								С чем можно сравнить удовольствие от спуска с горки «Камикадзе» с крутым уклоном, протяженностью 50 метров. 
+								Горка «Анаконда», длиной 88 метров, имеет «сухой» финиш. «Черная труба» — это 90 метров незабываемых ощущений,
+								неожиданных поворотов и оригинальной подсветки.
+							</p>
+							<p>
+								Для тех же, кто не рискует сразу спускаться с двенадцати метровой высоты, есть горка «Широкий ковер». Её завораживающий спуск
+								и радужные брызги никого не оставят равнодушными.
+							</p>
+							<p>
+								Для самых маленьких действует «Детский бассейн». В аквапарке также действуют малые водные аттракционы-обливалки.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="fourth">
+		<div id="yellow-light">
+			<div id="leaves">
+				<div id="bubbles">
+					<div class="wrapper">
+						<h2 class="b-head">Термозона</h2>
+						<div class="b-description">
+							<h3 class="b-description_head b-description_head__hr">О добрых традициях русской бани!</h3>
+							<p>
+								Если вы желаете отдохнуть от ежедневных забот и кардинально сменить обстановку, при этом ещё и с пользой
+								для вашего организма — тогда вы сделали правильный выбор!
+							</p>
+							<p>
+								Наш комплекс создан для того, чтобы вы, переступив порог заведения, погрузились в совершенно иной мир:
+								гармоничный, спокойный, красивый и необычный, с тонким вкусном востока...
+							</p>
+							<p>
+								Это настоящая русская парная: дровяная печь, классическая парилка, парение вениками, обливание холодной водой.
+								Так же в вашим услугам: уютная гостиная-столовая с камином и телевизором, комфортабельная раздевалка, душевая.
+								На втором этаже — мягкая, уютная зона отдыха, массажный кабинет.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+legend {*margin-left: -7px;}
+
+.b-example__block,
+.b-demo__example {
+    background: #edeff9;
+}
+
+.b-example__img {margin: 0;}
+
+.b-example__block .b-example__block,
+.b-example__block .b-demo__example {
+    background: #dfe4fb;
+    color: #777;
+}
+
+.b-article__b,
+.b-article__e,
+.b-article__m,
+.b-article__v {
+    cursor: text;
+}

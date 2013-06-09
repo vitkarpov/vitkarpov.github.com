@@ -1,0 +1,1 @@
+$(document).mousemove(function(){$('html').addClass('i-mouse');$(this).unbind("mousemove");});

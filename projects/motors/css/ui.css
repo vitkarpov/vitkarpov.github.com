@@ -1,0 +1,116 @@
+/* checkbox */
+.js-cb.ui-selectable .ui-selectee {
+	background: #C5C6C8 url(../img/checkbox.png) 8px 40% no-repeat;
+}
+.js-cb.ui-selectable .ui-selecting {
+	background: #BFBFBF url(../img/checkbox.png) 8px 40% no-repeat;
+}
+.js-cb.ui-selectable .ui-selected {
+	background: #9C9D9F url(../img/checked.png) 8px 40% no-repeat;
+}
+
+/* radio */
+.js-radio.ui-selectable .ui-selectee.delimiter {
+	background:url(../img/delimiter.png) right 50% no-repeat;
+}
+.js-radio.ui-selectable .ui-selectee {
+	background-color: #C5C6C8;
+}
+.js-radio.ui-selectable .ui-selecting {
+	background-color: #BFBFBF;
+}
+.js-radio.ui-selectable .ui-selected.delimiter {
+	background: #9C9D9F url(../img/dark_delimiter.png) right 50% no-repeat;
+}
+.js-radio.ui-selectable .ui-selected {
+	background-color: #9C9D9F;
+}
+
+.js-radio.ui-selectable .color.ui-selecting {
+	border: 1px solid white;
+}
+.js-radio.ui-selectable .color.ui-selected {
+	border: 1px solid black;
+}
+
+/* range */
+.js-range.ui-slider {
+	position: relative;
+	height: 8px;
+	background: #c5c6c8;
+
+	margin-bottom: 12px;
+}
+.js-range .ui-slider-range {
+	position: absolute;
+	height: 8px;
+	background: #a8a9ac;
+}
+.js-range .ui-slider-handle {
+	position: absolute;
+	padding: 0; top: 7px;
+	width: 12px;
+	height: 15px;
+	background: url(../img/slide-arrow-left.png) no-repeat;
+	margin-left: -11px;
+
+	outline: none !important;
+}
+.js-range .ui-slider-handle:last-child {
+	background: url(../img/slide-arrow-right.png) no-repeat;
+	margin-left: 0;
+}
+
+/*price*/
+.js-price.ui-slider {
+	position: relative;
+	height: 10px;
+	background: #d9dadb;
+
+	margin-bottom: 12px;
+}
+.js-price .ui-slider-range {
+	position: absolute;
+	height: 10px;
+	background: #a8a9ac;
+}
+.js-price .ui-slider-handle {
+	position: absolute;
+	padding: 7px 0 0 0; top: 10px;
+	width: 67px;
+	height: 24px;
+	background: url(../img/ui-price-left-bg.jpg) no-repeat;
+	margin-left: -67px;
+
+	outline: none !important;
+}
+.js-price a.ui-slider-handle {
+	color: black;
+	font-size: 14px;
+	text-align: center;
+	line-height: 21px;
+}	
+.js-price .ui-slider-handle:last-child {
+	margin-left: 0;
+	background: url(../img/ui-price-right-bg.jpg) no-repeat;
+}
+
+/*tabs*/
+.ui-state-active {
+	border: 1px solid #c9cacc;
+	margin-top: -1px;
+}
+.ui-tabs-hide {
+	display: none !important;
+}
+
+.ui-tabs-panel {
+	margin: 40px 0;
+}
+
+/* dropdown */
+.js-slideDown__content {
+	display: none;
+	z-index: 10;
+}
+

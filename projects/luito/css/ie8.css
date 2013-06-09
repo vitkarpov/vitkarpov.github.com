@@ -1,0 +1,33 @@
+.arrow-box {
+	border: 2px solid #cad1d5;
+}
+.tags {
+	margin-top: -2px;
+}
+.main-nav__holder_active,
+.main-nav__holder.expanded,
+.main-nav__holder .sub-menu {
+	border: 1px solid #cad1d5;
+}
+
+.main-nav__holder.expanded,
+.main-nav__holder_active {
+	margin-left: -6px;
+}
+
+.main-nav__holder .sub-menu {
+	border-top: 0;
+}
+
+.auth.expanded .inner {
+	padding: 14px;
+	border: 1px solid gray;
+}
+
+.promo-wrapper {
+	width: 100%;
+}
+
+.group {
+	zoom: 1;
+}

@@ -1,0 +1,10 @@
+.b-divider,
+.b-divider__base {zoom: 1;}
+
+* html .b-divider__side {
+    margin: 0 -3px 0 0;
+}
+
+* html .b-divider__side_rt {
+    margin: 0 0 0 -3px;
+}

@@ -1,0 +1,6 @@
+.i-expand {}
+
+.i-expand_on {}
+
+.i-expand__data {display:none;}
+.i-no-js .i-expand__data {display:block;}

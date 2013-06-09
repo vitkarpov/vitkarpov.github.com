@@ -1,0 +1,7 @@
+.b-elastic {
+background-image: expression(this.runtimeStyle.backgroundImage="none",
+this.innerHTML = this.innerHTML+'<span class="ie-gum"></span>');
+}
+.b-elastic__item {display:inline;}
+.b-elastic__holder {zoom:1;display:inline;}
+.ie-gum {margin-left: 100%;}

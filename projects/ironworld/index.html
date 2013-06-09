@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Железный мир — спортивный журнал</title>
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/iron-world.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!--[if lte IE 8]><script src="js/vendor/html5shiv.js"></script><![endif]-->
+    </head>
+    <body class="layout">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">К сожалению, вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">обновите его</a> или <a href="http://www.google.com/chromeframe/?redirect=true">включите Google Chrome Frame</a>.</p>
+        <![endif]-->
+
+        <div class="layout__head">
+            <div class="layout__wrapper">
+                <div class="header clearfix">
+                    <div class="header__buttons-section">
+                        <a href="#" class="header__item header__item_first before-fix after-fix">
+                           <span class="icon-before icon-before__lock">Вход</span> 
+                        </a>
+                        <a href="#" class="header__item before-fix">
+                           <span class="icon-before icon-before__man">Регистрация</span> 
+                        </a>
+                        <a href="#" class="header__item header__item_active before-fix">
+                           <span class="icon-before icon-before__cart">Корзина</span>
+                           <span class="header__order-count">3</span> 
+                        </a>
+                    </div>
+                    <!-- //buttons -->
+
+                    <div class="header__logo-section">
+                        <div class="header__item after-fix header__item_first before-fix">
+                            <a href="#" class="logo logo__head"><img src="img/logo.png" width="113" height="33" alt="Железный мир"></a>
+                            <a href="#" class="header__info after-fix icon-after icon-after__info">Информационный портал и сообщество</a>
+                        </div>
+                    </div>
+                    <!-- //logo section -->
+                    
+                    <div class="lang-trigger after-fix">
+                        <a href="" class="lang-trigger__item icon-before icon-before__ua before-fix dyn-link"><span class="dyn-link__item">Украина</span></a>
+                    </div>
+                    <!-- //lang -->
+                </div>    
+            </div>
+        </div>
+        <!-- //header -->
+
+        <div class="layout__wrapper">
+            <div class="layout__menu-wrapper menu__wrapper clearfix">
+                <form action="" class="search-form search-form_head before-fix"><fieldset>
+                    <input type="text" class="search-form__text" name="q">
+                    <input type="submit" class="search-form__submit" name="s" value="">
+                </fieldset></form>
+                <!-- //search -->
+
+                <nav class="menu">
+                    <a href="#" class="menu__item after-fix">О журнале</a>
+                    <a href="#" class="menu__item after-fix">Библиотека</a>
+                    <a href="#" class="menu__item after-fix">Магазин</a>
+                    <a href="#" class="menu__item after-fix">Реклама</a>
+                </nav>
+                <!-- //menu -->
+            </div>
+            <!-- //menu section -->
+
+            <div class="promo before-fix">
+                <div class="promo__mag">
+                    <img src="upload/magazine-1.jpg" width="195" height="258" alt="">
+                </div>
+                <h1 class="promo__head">новый номер журнала «железный мир»</h1>
+                <hr />
+                <div class="promo__text">
+                    Знание&nbsp;&mdash; сила! Этот афоризм известного английского философа в&nbsp;нашем нелегком виде спорта можно понимать буквально. 
+                </div>
+                <hr />
+                <div class="promo__button-wrapper clearfix">
+                    <a href="#" class="fl promo__button icon-before icon-before__cart-button before-fix link"><span class="link__underline">Купить печатную версию</span></a>
+                    <a href="#" class="fr promo__button icon-before icon-before__book-button before-fix link"><span class="link__underline">Читать онлайн версию</span></a>
+                </div>
+            </div>
+            <!-- //promo -->
+        </div>
+
+        <div class="layout__content">
+            <div class="layout__wrapper">
+                <div class="layout__sub-menu sub-menu">
+                    <a href="#" class="sub-menu__item after-fix before-fix icon-before icon-before__map link"><span class="link__underline">Центры продаж в вашем городе</span></a>
+                    <a href="#" class="sub-menu__item after-fix before-fix icon-before icon-before__mail link"><span class="link__underline">Подписка на журнал Почтой России</span></a>
+                    <a href="#" class="sub-menu__item after-fix before-fix icon-before icon-before__gift link"><span class="link__underline">Архив номеров</span></a>
+                </div>
+                <!-- // sub menu -->
+
+                <div class="rotator js-rotator">
+                    <div class="rotator__nav-wrapper">
+                        <div class="rotator__nav js-rotator__nav after-fix before-fix">
+                            <div class="clearfix">
+                                <div class="rotator__preview">
+                                    <img src="upload/r-preview-1.jpg" width="70" height="70">
+                                </div>
+                                <a href="#" class="link link_blue"><span class="link__underline">Белорус Сергей Рабченко завоевал чемпионский пояс WBC Silver</span></a>
+                                <span class="rotator__date">26.11.2012</span>
+                            </div>
+                        </div>
+                        <div class="rotator__nav js-rotator__nav after-fix before-fix">
+                            <div class="clearfix">
+                                <div class="rotator__preview">
+                                    <img src="upload/r-preview-2.jpg" width="70" height="70">
+                                </div>
+                                <a href="#" class="link link_blue"><span class="link__underline">Почему справедлив двойной интеграл Мёбиуса?</span></a>
+                                <span class="rotator__date">26.11.2012</span>
+                            </div>
+                        </div>
+                        <div class="rotator__nav js-rotator__nav after-fix before-fix">
+                            <div class="clearfix">
+                                <div class="rotator__preview">
+                                    <img src="upload/r-preview-3.jpg" width="70" height="70">
+                                </div>
+                                <a href="#" class="link link_blue"><span class="link__underline">В полку российских профессионалов ожидается пополнение</span></a>
+                                <span class="rotator__date">26.11.2012</span>
+                            </div>
+                        </div>
+                         <div class="rotator__nav js-rotator__nav after-fix before-fix">
+                            <div class="clearfix">
+                                <div class="rotator__preview">
+                                    <img src="upload/r-preview-4.jpg" width="70" height="70">
+                                </div>
+                                <a href="#" class="link link_blue"><span class="link__underline">Возрастающий Наибольший Общий Делитель (НОД) глазами современников</span></a>
+                                <span class="rotator__date">26.11.2012</span>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="rotator__content js-rotator__content">
+                        <img src="upload/r-big-1.jpg" width="660" height="365">
+                        <article class="rotator__text-wrapper">
+                            <span class="rotator__marker">26.11.2012</span>
+                            <h2 class="rotator__caption">Белорус Сергей Рабченко завоевал чемпионский пояс WBC Silver</h2>
+                            <div class="rotator__text">
+                                <p>Белорусский боксер Сергей Рабченко защитил свой титул чемпиона Европы среди профессионалов в весе до 69,9 кг по версии EBU в поединке с претендентом Седриком Виту, Франция. Бой прошел 24 ноября в Манчестере, по итогам которого победа была присуждена белорусу (116-113, 116-113, 114-115). На счету 26-летнего Сергея уже 22 победы, из них 16 нокаутом и ни одного поражения. Дальнейшей целью спортсмена является получение титула чемпиона мира.</p>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="rotator__content js-rotator__content">
+                        <img src="upload/r-big-2.jpg" width="660" height="365">
+                        <article class="rotator__text-wrapper">
+                            <span class="rotator__marker">26.11.2012</span>
+                            <h2 class="rotator__caption">Почему неоднозначна теорема Гаусса - Остроградского?</h2>
+                            <div class="rotator__text">
+                                <p>Высшая арифметика охватывает многомерный экстремум функции, что и требовалось доказать. Геодезическая линия отражает неопровержимый интеграл по поверхности, при этом, вместо 13 можно взять любую другую константу. Функция многих переменных в принципе ускоряет аксиоматичный натуральный логарифм, таким образом сбылась мечта идиота - утверждение полностью доказано. Аксиома положительна.</p>
+                                <p>Система координат уравновешивает интеграл от функции комплексной переменной, при этом, вместо 13 можно взять любую другую константу.</p>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="rotator__content js-rotator__content">
+                        <img src="upload/r-big-1.jpg" width="660" height="365">
+                        <article class="rotator__text-wrapper">
+                            <span class="rotator__marker">26.11.2012</span>
+                            <h2 class="rotator__caption">Белорус Сергей Рабченко завоевал чемпионский пояс WBC Silver</h2>
+                            <div class="rotator__text">
+                                <p>Белорусский боксер Сергей Рабченко защитил свой титул чемпиона Европы среди профессионалов в весе до 69,9 кг по версии EBU в поединке с претендентом Седриком Виту, Франция. Бой прошел 24 ноября в Манчестере, по итогам которого победа была присуждена белорусу (116-113, 116-113, 114-115). На счету 26-летнего Сергея уже 22 победы, из них 16 нокаутом и ни одного поражения. Дальнейшей целью спортсмена является получение титула чемпиона мира.</p>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="rotator__content js-rotator__content">
+                        <img src="upload/r-big-2.jpg" width="660" height="365">
+                        <article class="rotator__text-wrapper">
+                            <span class="rotator__marker">26.11.2012</span>
+                            <h2 class="rotator__caption">Почему неоднозначна теорема Гаусса - Остроградского?</h2>
+                            <div class="rotator__text">
+                                <p>Высшая арифметика охватывает многомерный экстремум функции, что и требовалось доказать. Геодезическая линия отражает неопровержимый интеграл по поверхности, при этом, вместо 13 можно взять любую другую константу. Функция многих переменных в принципе ускоряет аксиоматичный натуральный логарифм, таким образом сбылась мечта идиота - утверждение полностью доказано. Аксиома положительна.</p>
+                                <p>Система координат уравновешивает интеграл от функции комплексной переменной, при этом, вместо 13 можно взять любую другую константу.</p>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+                <!-- // rotator -->
+
+                <h1 class="layout__caption after-fix">Магазин &laquo;Железного мира&raquo;</h1>
+
+                <div class="shop-menu__wrapper">
+                    <form action="" class="search-form search-form_light before-fix"><fieldset>
+                        <input type="text" placeholder="Поиск по каталогу" class="search-form__text" name="q">
+                        <input type="submit" class="search-form__submit" name="s" value="">
+                    </fieldset></form>
+                    <!-- //search -->
+
+                    <nav class="shop-menu">
+                        <a class="shop-menu__item link"><span class="link__underline">Продукция</span></a>
+                        <a class="shop-menu__item link"><span class="link__underline">Товары</span></a>
+                        <a class="shop-menu__item link"><span class="link__underline">Скидки</span></a>
+                        <a class="shop-menu__item link"><span class="link__underline">Условия доставки</span></a>
+                    </nav>
+                </div>
+                <!-- //shop menu -->
+
+                <div class="product__wrapper">
+                    <div class="product js-slider" data-options='{"width": "990", "height": "376"}'>
+                        <div>
+                            <div class="product__content">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="product__image-wrapper">
+                                                <div class="product__image">
+                                                    <img src="upload/product-img-1.jpg" width="227" height="330" />
+                                                </div>
+                                            </td>
+                                            <td class="product__text-wrapper">
+                                                <div class="product__special-wrapper"><span class="marker">Спецпредложения</span></div>
+                                                <h2 class="product__caption">Книга &laquo;Анаболик ревю 2008&raquo; Юрий Бомбела</h2>
+                                                <div class="product__text text-section">
+                                                    <p>Книга «Анаболик Ревю 2008» посвящена фармакологическим препаратам, применяемым сегодня в спортивной практике. Всему тому, что традиционно называется допингом и с большим или меньшим успехом запрещается Медицинской Комиссией МОК либо...</p>
+                                                    <div class="product__more-link-wrapper"><a href="#">Подробнее о товаре</a></div>
+                                                </div>
+                                                <form class="product__bottom"><fieldset>
+                                                    <span class="product__price">162,00 .-</span>
+                                                    <div class="buy-button before-fix">Купить<input type="submit" /></div>
+                                                </fieldset></form>
+                                            </td>    
+                                        </tr>    
+                                    </tbody>    
+                                </table>
+                            </div>
+                        </div>
+                        <!-- product item -->
+                        <div>
+                            <div class="product__content">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="product__image-wrapper">
+                                                <div class="product__image">
+                                                    <img src="upload/product-img-2.jpg" width="363" height="330" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="product__special-wrapper"><span class="marker">Спецпредложения</span></div>
+                                                <h2 class="product__caption">Действительный разрыв функции: лист Мёбиуса или начало координат?</h2>
+                                                <div class="product__text text-section">
+                                                    <p>Книга «Анаболик Ревю 2008» посвящена фармакологическим препаратам.</p>
+                                                    <div class="product__more-link-wrapper"><a href="#">Подробнее о товаре</a></div>
+                                                </div>
+                                                <form class="product__bottom"><fieldset>
+                                                    <span class="product__price">162,00 .-</span>
+                                                    <div class="buy-button before-fix">Купить<input type="submit" /></div>
+                                                </fieldset></form>
+                                            </td>    
+                                        </tr>    
+                                    </tbody>    
+                                </table>
+                            </div>
+                        </div>
+                        <!-- product item -->
+                    </div>
+                </div>
+                <!-- //product slider -->
+
+                <h2 class="layout__caption after-fix icon-before icon-before__star before-fix">Хиты продаж</h2>
+                <div class="catalog__wrapper">
+                <div class="catalog js-slider" data-options='{"width": "990", "height": "380", "pagination": false}'>
+                    <div>
+                        <div class="catalog__inner-list">
+                            <div class="catalog__item">
+                                <div class="catalog__inner">
+                                    <div class="catalog__image">
+                                        <img src="upload/catalog-1.jpg" width="200" height="200" />
+                                    </div>
+                                    <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                    <div class="catalog__price">162,00 .-</div>
+                                </div>
+                                <form class="form catalog__form"><fieldset>
+                                    <div class="catalog__inner">
+                                        <input type="checkbox" class="js-custom-input" id="catalog-1" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                    </div>
+
+                                    <div class="clearfix catalog__bottom">
+                                        <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                        <div class="catalog__submit-wrapper">
+                                            <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                        </div>    
+                                    </div>
+                                </fieldset></form>
+                            </div>
+                            <div class="catalog__item">
+                                <div class="catalog__inner">
+                                    <div class="catalog__image">
+                                        <img src="upload/catalog-2.jpg" width="200" height="200" />
+                                    </div>
+                                    <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                    <div class="catalog__price">162,00 .-</div>
+                                </div>
+                                <form class="form catalog__form"><fieldset>
+                                    <div class="catalog__inner">
+                                        <input type="checkbox" class="js-custom-input" id="catalog-2" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                    </div>
+
+                                    <div class="clearfix catalog__bottom">
+                                        <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                        <div class="catalog__submit-wrapper">
+                                            <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                        </div> 
+                                    </div>
+                                </fieldset></form>
+                            </div>
+                            <div class="catalog__item">
+                                <div class="catalog__inner">
+                                    <div class="catalog__image">
+                                        <img src="upload/catalog-1.jpg" width="200" height="200" />
+                                    </div>
+                                    <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                    <div class="catalog__price">162,00 .-</div>
+                                </div>
+                                <form class="form catalog__form"><fieldset>
+                                    <div class="catalog__inner">
+                                        <input type="checkbox" class="js-custom-input" id="catalog-3" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                    </div>
+
+                                    <div class="clearfix catalog__bottom">
+                                        <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                        <div class="catalog__submit-wrapper">
+                                            <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                        </div> 
+                                    </div>
+                                </fieldset></form>
+                            </div>
+                            <div class="catalog__item">
+                                <div class="catalog__inner">
+                                    <div class="catalog__image">
+                                        <img src="upload/catalog-2.jpg" width="200" height="200" />
+                                    </div>
+                                    <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                    <div class="catalog__price">162,00 .-</div>
+                                </div>
+                                <form class="form catalog__form"><fieldset>
+                                    <div class="catalog__inner">
+                                        <input type="checkbox" class="js-custom-input" id="catalog-4" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                    </div>
+
+                                    <div class="clearfix catalog__bottom">
+                                        <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                        <div class="catalog__submit-wrapper">
+                                            <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                        </div> 
+                                    </div>
+                                </fieldset></form>
+                            </div>
+                        </div>    
+                    </div>
+                    <div>
+                        <div class="catalog__inner-list">
+                            <div class="catalog__item">
+                                <div class="catalog__inner">
+                                    <div class="catalog__image">
+                                        <img src="upload/catalog-1.jpg" width="200" height="200" />
+                                    </div>
+                                    <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                    <div class="catalog__price">162,00 .-</div>
+                                </div>
+                                <form class="form catalog__form"><fieldset>
+                                    <div class="catalog__inner">
+                                        <input type="checkbox" class="js-custom-input" id="catalog-5" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                    </div>
+
+                                    <div class="clearfix catalog__bottom">
+                                        <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                        <div class="catalog__submit-wrapper">
+                                            <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                        </div> 
+                                    </div>
+                                </fieldset></form>
+                            </div>
+                            <div class="catalog__item">
+                                <div class="catalog__inner">
+                                    <div class="catalog__image">
+                                        <img src="upload/catalog-2.jpg" width="200" height="200" />
+                                    </div>
+                                    <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                    <div class="catalog__price">162,00 .-</div>
+                                </div>
+                                <form class="form catalog__form"><fieldset>
+                                    <div class="catalog__inner">
+                                        <input type="checkbox" class="js-custom-input" id="catalog-6" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                    </div>
+
+                                    <div class="clearfix catalog__bottom">
+                                        <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                        <div class="catalog__submit-wrapper">
+                                            <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                        </div> 
+                                    </div>
+                                </fieldset></form>
+                            </div>
+                            <div class="catalog__item">
+                                <div class="catalog__inner">
+                                    <div class="catalog__image">
+                                        <img src="upload/catalog-1.jpg" width="200" height="200" />
+                                    </div>
+                                    <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                    <div class="catalog__price">162,00 .-</div>
+                                </div>
+                                <form class="form catalog__form"><fieldset>
+                                    <div class="catalog__inner">
+                                        <input type="checkbox" class="js-custom-input" id="catalog-1" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                    </div>
+
+                                    <div class="clearfix catalog__bottom">
+                                        <div class="catalog__spinner"><input type="text" value="7" class="js-spinner"></div>
+                                        <div class="catalog__submit-wrapper">
+                                            <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                        </div> 
+                                    </div>
+                                </fieldset></form>
+                            </div>
+                            <div class="catalog__item">
+                                <div class="catalog__inner">
+                                    <div class="catalog__image">
+                                        <img src="upload/catalog-2.jpg" width="200" height="200" />
+                                    </div>
+                                    <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                    <div class="catalog__price">162,00 .-</div>
+                                </div>
+                                <form class="form catalog__form"><fieldset>
+                                    <div class="catalog__inner">
+                                        <input type="checkbox" class="js-custom-input" id="catalog-8" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                    </div>
+
+                                    <div class="clearfix catalog__bottom">
+                                        <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                        <div class="catalog__submit-wrapper">
+                                            <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                        </div> 
+                                    </div>
+                                </fieldset></form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //catalog slider -->
+                </div>
+
+                <h2 class="layout__caption after-fix icon-before icon-before__clock before-fix">Новинки</h2>
+                <div class="catalog__wrapper">
+                    <div class="catalog js-slider" data-options='{"width": "990", "height": "380", "pagination": false}'>
+                        <div>
+                            <div class="catalog__inner-list">
+                                <div class="catalog__item">
+                                    <div class="catalog__inner">
+                                        <div class="catalog__image">
+                                            <img src="upload/catalog-1.jpg" width="200" height="200" />
+                                        </div>
+                                        <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                        <div class="catalog__price">162,00 .-</div>
+                                    </div>
+                                    <form class="form catalog__form"><fieldset>
+                                        <div class="catalog__inner">
+                                            <input type="checkbox" class="js-custom-input" id="catalog-1" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                        </div>
+
+                                        <div class="clearfix catalog__bottom">
+                                            <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                            <div class="catalog__submit-wrapper">
+                                            <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                        </div> 
+                                        </div>
+                                    </fieldset></form>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__inner">
+                                        <div class="catalog__image">
+                                            <img src="upload/catalog-2.jpg" width="200" height="200" />
+                                        </div>
+                                        <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                        <div class="catalog__price">162,00 .-</div>
+                                    </div>
+                                    <form class="form catalog__form"><fieldset>
+                                        <div class="catalog__inner">
+                                            <input type="checkbox" class="js-custom-input" id="catalog-2" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                        </div>
+
+                                        <div class="clearfix catalog__bottom">
+                                            <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                            <div class="catalog__submit-wrapper">
+                                                <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                            </div> 
+                                        </div>
+                                    </fieldset></form>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__inner">
+                                        <div class="catalog__image">
+                                            <img src="upload/catalog-1.jpg" width="200" height="200" />
+                                        </div>
+                                        <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                        <div class="catalog__price">162,00 .-</div>
+                                    </div>
+                                    <form class="form catalog__form"><fieldset>
+                                        <div class="catalog__inner">
+                                            <input type="checkbox" class="js-custom-input" id="catalog-3" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                        </div>
+
+                                        <div class="clearfix catalog__bottom">
+                                            <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                            <div class="catalog__submit-wrapper">
+                                                <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                            </div> 
+                                        </div>
+                                    </fieldset></form>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__inner">
+                                        <div class="catalog__image">
+                                            <img src="upload/catalog-2.jpg" width="200" height="200" />
+                                        </div>
+                                        <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                        <div class="catalog__price">162,00 .-</div>
+                                    </div>
+                                    <form class="form catalog__form"><fieldset>
+                                        <div class="catalog__inner">
+                                            <input type="checkbox" class="js-custom-input" id="catalog-4" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                        </div>
+
+                                        <div class="clearfix catalog__bottom">
+                                            <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                            <div class="catalog__submit-wrapper">
+                                                <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                            </div> 
+                                        </div>
+                                    </fieldset></form>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="catalog__inner-list">
+                                <div class="catalog__item">
+                                    <div class="catalog__inner">
+                                        <div class="catalog__image">
+                                            <img src="upload/catalog-1.jpg" width="200" height="200" />
+                                        </div>
+                                        <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                        <div class="catalog__price">162,00 .-</div>
+                                    </div>
+                                    <form class="form catalog__form"><fieldset>
+                                        <div class="catalog__inner">
+                                            <input type="checkbox" class="js-custom-input" id="catalog-5" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                        </div>
+
+                                        <div class="clearfix catalog__bottom">
+                                            <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                            <div class="catalog__submit-wrapper">
+                                                <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                            </div> 
+                                        </div>
+                                    </fieldset></form>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__inner">
+                                        <div class="catalog__image">
+                                            <img src="upload/catalog-2.jpg" width="200" height="200" />
+                                        </div>
+                                        <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                        <div class="catalog__price">162,00 .-</div>
+                                    </div>
+                                    <form class="form catalog__form"><fieldset>
+                                        <div class="catalog__inner">
+                                            <input type="checkbox" class="js-custom-input" id="catalog-6" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                        </div>
+
+                                        <div class="clearfix catalog__bottom">
+                                            <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                            <div class="catalog__submit-wrapper">
+                                                <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                            </div> 
+                                        </div>
+                                    </fieldset></form>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__inner">
+                                        <div class="catalog__image">
+                                            <img src="upload/catalog-1.jpg" width="200" height="200" />
+                                        </div>
+                                        <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                        <div class="catalog__price">162,00 .-</div>
+                                    </div>
+                                    <form class="form catalog__form"><fieldset>
+                                        <div class="catalog__inner">
+                                            <input type="checkbox" class="js-custom-input" id="catalog-1" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                        </div>
+
+                                        <div class="clearfix catalog__bottom">
+                                            <div class="catalog__spinner"><input type="text" value="7" class="js-spinner"></div>
+                                            <div class="catalog__submit-wrapper">
+                                                <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                            </div> 
+                                        </div>
+                                    </fieldset></form>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__inner">
+                                        <div class="catalog__image">
+                                            <img src="upload/catalog-2.jpg" width="200" height="200" />
+                                        </div>
+                                        <div class="catalog__name text-section"><a href="#">Журнал &laquo;Железный мир&raquo; <br />№ 04/2012</a></div>
+                                        <div class="catalog__price">162,00 .-</div>
+                                    </div>
+                                    <form class="form catalog__form"><fieldset>
+                                        <div class="catalog__inner">
+                                            <input type="checkbox" class="js-custom-input" id="catalog-8" /><label class="form__label" for="catalog-1">Сравнение</label>
+                                        </div>
+
+                                        <div class="clearfix catalog__bottom">
+                                            <div class="catalog__spinner"><input type="text" value="1" class="js-spinner"></div>
+                                            <div class="catalog__submit-wrapper">
+                                                <div class="buy-button before-fix catalog__submit">Купить <input type="submit"></div>
+                                            </div> 
+                                        </div>
+                                    </fieldset></form>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <!-- //catalog slider -->
+                </div> 
+            </div>    
+        </div>        
+        <!-- //shop content -->
+
+        <div class="footer layout__wrapper">
+            <div class="footer__item footer__about">
+                <div class="text-section">
+                <h2>Журнал &laquo;Железный мир&raquo;</h2>
+                    <p>Журнал "Железный мир" был задуман как профессиональное издание, посвященное силовым видам спорта. На страницах журнала находят свое отражения события, происходящие в мире бодибилдинга, пауэрлифтинга, армрестлинга, серии "Стронгмен".</p>
+                    <p>В журнале вы найдете информацию, посвященную методикам построения тренировочного процесса и спортивному питанию, советы профессиональных спортсменов. Много внимания уделяется соревнованиям, как проходящим у нас в стране, так и зарубежным, мировым и внутрироссийским новостям.</p>
+                </div>
+                <p><a href="#" class="button">Подробнее о журнале</a></p>
+            </div>
+            <div class="footer__item footer__news">
+                <h2 class="text-section__caption">Что нового?</h2>
+                <ul class="footer__news-list foot-news">
+                    <li class="foot-news__item">
+                        <div class="rotator__preview">
+                            <img src="upload/r-preview-1.jpg" width="70" height="70">
+                        </div>
+                        <a href="#" class="link link_blue"><span class="link__underline">Белорус Сергей Рабченко завоевал чемпионский пояс WBC Silver</span></a>
+                        <date class="rotator__date">26.11.2012</date>
+                    </li>
+                    <li class="foot-news__item">
+                        <div class="rotator__preview">
+                            <img src="upload/r-preview-2.jpg" width="70" height="70">
+                        </div>
+                        <a href="#" class="link link_blue"><span class="link__underline">В полку российских профессионалов прибыло</span></a>
+                        <date class="rotator__date">26.11.2012</date>
+                    </li>
+                    <li class="foot-news__item">
+                        <div class="rotator__preview">
+                            <img src="upload/r-preview-3.jpg" width="70" height="70">
+                        </div>
+                        <a href="#" class="link link_blue"><span class="link__underline">Белорус Сергей Рабченко завоевал чемпионский пояс WBC Silver</span></a>
+                        <date class="rotator__date">26.11.2012</date>
+                    </li>
+                </ul>
+                <p><a href="#" class="button">Все новости</a></p>
+            </div>   
+            <nav class="footer__item footer__ico-menu foot-menu">
+                <a href="#" class="foot-menu__item icon-before before-fix icon-before__post link"><span class="link__underline">Обратная связь</span></a>
+                <a href="#" class="foot-menu__item icon-before before-fix icon-before__people link"><span class="link__underline">Представительства журнала</span></a>
+                <a href="#" class="foot-menu__item icon-before before-fix icon-before__book link"><span class="link__underline">Реклама в журнале</span></a>
+            </nav>
+        </div>
+
+        <div class="footer footer_black before-fix">
+            <div class="layout__wrapper clearfix">
+                <div class="fr footer__menu-wrapper text-section">
+                    <nav class="foot-links">
+                        <a class="foot-links__item" href="#">О журнале</a>
+                        <a class="foot-links__item" href="#">Библиотека</a>
+                        <a class="foot-links__item" href="#">Магазин</a>
+                        <a class="foot-links__item" href="#">Реклама</a>
+                    </nav>
+                    <p>Телефон дирекции сайта: +7(925) 053-5584; <br /> e-mail: <a href="mailto: info@ironworld.ru">info@ironworld.ru</a> <br /> Техподдержка сайта e-mail: <a href="mailto: support@ironworld.ru">support@ironworld.ru</a> </p>
+                </div>
+                <div class="footer__item footer__info text-section">
+                   <p>&copy;&nbsp;2002&nbsp;&mdash; 2012&nbsp;ЗАО Журнал &laquo;Железный Мир&raquo;</p>
+<p>Все права на&nbsp;печатное издание &laquo;Железный мир&raquo; и&nbsp;торговый знак &laquo;Железный мир&raquo; принадлежат ЗАО &laquo;Железный мир&raquo;. Все права на&nbsp;материалы, опубликованные на&nbsp;настоящем сайте принадлежат ЗАО &laquo;Железный мир&raquo;. Любое использование материалов и&nbsp;новостей сайта допускается только с&nbsp;разрешения редакции и&nbsp;с&nbsp;обязательной гиперссылкой (hyperlink) на&nbsp;сайт www.ironworld.ru. Юридический отдел e-mail: <a href="mailto: legal@ironworld.ru">legal@ironworld.ru</a></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/iron-world.js"></script>
+    </body>
+</html>
+<!-- Frontend developer: viktor.s.karpov@gmail.com-->

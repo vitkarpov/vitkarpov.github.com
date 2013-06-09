@@ -1,0 +1,12 @@
+.b-grid {
+    letter-spacing: -0.31em;
+    word-spacing: -0.43em;
+}
+
+.b-grid__cell {
+    display:inline-block;
+    word-wrap:break-word;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+}

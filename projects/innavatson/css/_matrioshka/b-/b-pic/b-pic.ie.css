@@ -1,0 +1,36 @@
+.ie-pseudo {
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    zoom:1;
+}
+
+.ie-pseudo ins {position: absolute;}
+
+a.b-pic .ie-pseudo {cursor:pointer;}
+
+
+.b-pic {
+    behavior: expression(
+    this.innerHTML = '<span class="ie-pseudo ie-before"><ins></ins></span>'+this.innerHTML+'<span class="ie-pseudo ie-after"><ins></ins></span>',
+    runtimeStyle.cssText += 'behavior: expression("") !important;');
+}
+
+.b-pic ins {
+    zoom: expression(
+        runtimeStyle.zoom=1,
+        runtimeStyle.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(src="+currentStyle.backgroundImage.split('"')[1]+")",
+        runtimeStyle.background=0,
+        parentNode
+    );
+}
+
+.b-pic .ie-before ins,
+.b-pic .ie-after ins {
+     background: url(sprite.png) no-repeat;
+     width: 9999px;
+     height: 9999px;
+}
+
+
+

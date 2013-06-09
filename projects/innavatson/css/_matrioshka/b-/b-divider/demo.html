@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+    <title>Разделитель .b-divider</title>
+
+
+    <!--default-->
+        <link rel="stylesheet" href="../../_default/demo/demo.css">
+        <!--[if lt IE 9 ]><link rel="stylesheet" href="../../_default/demo/demo.ie.css"><![endif]-->
+        <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+    <!---->
+
+    <!--Основа-->
+        <link rel="stylesheet" href="b-divider.css">
+        <!--[if lt IE 8 ]><link rel="stylesheet" href="b-divider.ie.css"><![endif]-->
+    <!---->
+
+    <!--Дополнительные стили для демки-->
+        <link rel="stylesheet" href="../b-grid/b-grid.css">
+        <link rel="stylesheet" href="../b-grid/__cell/b-grid__cell_1-1.css">
+        <link rel="stylesheet" href="../b-grid/__cell/b-grid__cell_1-2.css">
+        <link rel="stylesheet" href="../b-grid/__cell/b-grid__cell_1-3.css">
+        <link rel="stylesheet" href="../b-grid/__cell/b-grid__cell_2-3.css">
+        <!--[if lt IE 8 ]><link rel="stylesheet" href="../b-grid/b-grid.ie.css"><![endif]-->
+
+        <link rel="stylesheet" href="../b-pic/b-pic.css">
+        <!--[if lt IE 8 ]><link rel="stylesheet" href="../b-pic/b-pic.ie.css"><![endif]-->
+
+        <link rel="stylesheet" href="../../i-/i-expand/i-expand.css">
+        <script src="../../i-/i-expand/i-expand.js"></script>
+        <style>
+
+            .b-pic_expand:before,
+            .b-pic_expand .ie-before {
+                content: '';
+
+                width: 17px;
+                height: 17px;
+                margin-right: 5px;
+                margin-top: -3px;
+            }
+
+            .b-pic_expand:before {background-position:-182px -170px;}
+            .b-pic_expand .ie-before ins {left:-182px;top:-170px;}
+
+        </style>
+    <!---->
+
+</head>
+<body>
+
+
+
+<div class="b-demo b-demo-article">
+
+        <h1>Разделитель .b-divider</h1>
+
+        <ul>
+            <li> Ширина <code><span class="b-article__b">.b-divider</span><span class="b-article__e">__side</span></code> зависит от вложеного в него контента.</li>
+            <li><code><span class="b-article__b">.b-divider</span><span class="b-article__e">__base</span></code> занимает всю доступную ширину минус ширина <code><span class="b-article__b">.b-divider</span><span class="b-article__e">__side</span></code>.</li>
+            <li><code><span class="b-article__b">.b-divider</span><span class="b-article__e">__side</span></code> и <code><span class="b-article__b">.b-divider</span><span class="b-article__e">__base</span></code> не пересекаются.</p></li>
+        </ul>
+
+        <p><b>Пример:</b>
+
+
+        <div class="b-divider i-indent">
+            <div class="b-divider__side">
+                <div class="b-demo__example">side</div>
+            </div>
+            <div class="b-divider__base">
+                <div class="b-demo__example">base</div>
+            </div>
+        </div>
+
+        
+        <h3>Состояния</h3>
+
+        <p>Элемент <code><span class="b-article__b">.b-divider</span><span class="b-article__e">__side</span></code> имеет два состояния:
+
+        <ul>
+            <li>Расположение слева по-умолчанию.</li>
+            <li>Расположение справа когда добавлен модификатор <code><span class="b-article__b">.b-divider</span><span class="b-article__e">__side</span><span class="b-article__m">_rt</span></code>.</li>
+        </ul>
+
+        <p><b>Пример:</b>
+
+
+        <div class="b-divider i-indent">
+            <div class="b-divider__side b-divider__side_rt">
+                <div class="b-demo__example">side | side<span class="b-article__m">_rt</span></div>
+            </div>
+            <div class="b-divider__base">
+                <div class="b-demo__example">base</div>
+            </div>
+        </div>
+
+        
+        <h3>mix</h3>
+
+        <p>Можно совмещать несколько элементов <code><span class="b-article__b">.b-divider</span><span class="b-article__e">__side</span></code> в одном блоке.</p>
+
+
+        <p><b>Пример:</b>
+        <div class="b-divider i-indent">
+            <div class="b-divider__side">
+                <div class="b-demo__example">side</div>
+            </div>
+            <div class="b-divider__side">
+                <div class="b-demo__example">side</div>
+            </div>
+            <div class="b-divider__side b-divider__side_rt">
+                <div class="b-demo__example">side | side<span class="b-article__m">_rt</span></div>
+            </div>
+            <div class="b-divider__base">
+                <div class="b-demo__example">base</div>
+            </div>
+        </div>
+
+        <p><b>Раскладка:</b>
+        <p>Отступы и размеры у элементов создаются с помощью модификаторов.
+
+        <div class="b-divider i-indent">
+            <div class="b-divider__side b-divider__side_nav">
+                <div class="b-demo__example">side | side<span class="b-article__m">_nav</span> (width:20%)</div>
+            </div>
+            <div class="b-divider__side b-divider__side_rt b-divider__side_extra">
+                <div class="b-demo__example"> side | side<span class="b-article__m">_rt</span> | side<span class="b-article__m">_extra</span> (width:250px)</div>
+            </div>
+            <div class="b-divider__base">
+                <div class="b-demo__example">base</div>
+            </div>
+        </div>
+
+<style>
+.b-divider__side_nav {
+    margin-right:18px;
+    width:20%;
+}
+.b-divider__side_extra {
+    margin-left:18px;
+    width:250px;
+}
+</style>
+
+<pre><span class="b-article__b">.b-divider</span><span class="b-article__e">__side</span><span class="b-article__m">_nav</span> {
+    margin-right:18px;
+    width:20%;
+}
+
+<span class="b-article__b">.b-divider</span><span class="b-article__e">__side</span><span class="b-article__m">_extra</span> {
+    margin-left:18px;
+    width:250px;
+}
+</pre>
+    <div class="b-info i-expand i-indent">
+        <a class="b-info__head i-expand__tick b-pic b-pic_expand" href="javascript:void(0)">Сокращенная нотация</a>
+        <div class="b-info__data i-expand__data" style="display: none; ">
+Для блока можно использовать сокращенную нотацию, пример:
+
+<pre>
+<span class="b-article__b">.b-divider</span>           => <span class="b-article__b">.b-d</span>
+<span class="b-article__b">.b-divider</span><span class="b-article__e">__side</span>     => <span class="b-article__b">.b-d</span><span class="b-article__e">__s</span> {}
+<span class="b-article__b">.b-divider</span><span class="b-article__e">__side</span><span class="b-article__m">_rt</span>  => <span class="b-article__b">.b-d</span><span class="b-article__e">__s</span><span class="b-article__m">_r</span> {}
+<span class="b-article__b">.b-divider</span><span class="b-article__e">__base</span>     => <span class="b-article__b">.b-d</span><span class="b-article__e">__b</span> {}
+</pre>
+        </div>
+    </div>
+
+
+        <h2>Примеры использования</h2>
+
+        <h3>media</h3>
+
+        <div class="b-divider i-indent">
+            <div class="b-divider__side"><img class="b-example__img" src="../../_default/demo/i/18x18.png" height="18" alt=""></div>
+            <div class="b-divider__base">&nbsp;text</div>
+        </div>
+
+        <div class="b-divider i-indent">
+            <div class="b-divider__side"><img src="../../_default/demo/i/72x72.png" height="72" alt=""></div>
+            <div class="b-divider__base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+
+        <div class="b-divider i-indent">
+            <div class="b-divider__side"><img class="b-example__img i-indent" src="../../_default/demo/i/144x144.png" height="144" alt=""></div>
+            <div class="b-divider__side b-divider__side_rt"><img src="../../_default/demo/i/72x72.png" height="72" alt=""></div>
+            <div class="b-divider__base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+
+        <h3>layout</h3>
+
+        <p><code class="b-article__b">.b-divider</code> | <code class="b-article__b">.b-grid</code></p>
+
+
+        <div class="b-divider i-indent">
+            <div class="b-divider__side">
+                <div class="b-demo__example">logo</div>
+            </div>
+            <div class="b-divider__side b-divider__side_rt"><div class="b-demo__example">phone</div></div>
+            <div class="b-divider__base"><div class="b-demo__example">banner</div></div>
+        </div>
+
+        <div class="b-divider i-indent">
+            <div class="b-divider__side b-divider__side_nav">
+
+                    <div class="b-demo__example i-indent">menu</div>
+
+                    <div class="b-divider i-indent">
+                        <div class="b-divider__side b-divider__side_rt">
+                            <div class="b-demo__example">
+                                <a href="javascript:void(0)">button</a>
+                            </div>
+                        </div>
+                        <div class="b-divider__base"><div class="b-demo__example">input</div></div>
+                    </div>
+            </div>
+            <div class="b-divider__side b-divider__side_rt b-divider__side_extra">
+                <div class="b-demo__example">news</div>
+            </div>
+            <div class="b-divider__base">
+                    <div class="b-demo__example i-indent">info</div>
+                    <div class="b-grid b-example">
+                        <div class="b-grid__cell b-grid__cell_1-2">
+                            <div class="b-example__block">
+
+                                <div class="b-divider">
+                                    <div class="b-divider__side">
+                                                <img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">
+                                        </div>
+                                    <div class="b-divider__base">
+                                            catalog item
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="b-grid__cell b-grid__cell_1-2">
+                            <div class="b-example__block">
+
+                                <div class="b-divider">
+                                    <div class="b-divider__side">
+                                                <img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">
+                                        </div>
+                                    <div class="b-divider__base">
+                                            catalog item
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="b-grid__cell b-grid__cell_1-2">
+                            <div class="b-example__block">
+
+                                <div class="b-divider">
+                                    <div class="b-divider__side">
+                                                <img class="b-example__img" src="../../_default/demo/demo.png" height="54" alt="">
+                                        </div>
+                                    <div class="b-divider__base">
+                                            catalog item
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="b-grid__cell b-grid__cell_1-2">
+                            <div class="b-example__block">
+
+                                <div class="b-divider">
+                                    <div class="b-divider__side">
+                                                <img class="b-example__img" src="../../_default/demo/demo.png"  height="54" alt="">
+                                        </div>
+                                    <div class="b-divider__base">
+                                            catalog item
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-demo__example">text</div>
+
+            </div>
+        </div>
+        <div class="b-divider i-indent">
+            <div class="b-divider__side">
+                <div class="b-demo__example">copyright</div>
+            </div>
+            <div class="b-divider__base">
+                <div class="b-demo__example">contact info</div>
+            </div>
+        </div>
+
+</div>
+
+
+
+
+</body>
+</html>

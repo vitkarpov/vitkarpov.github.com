@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>ИннаВатсон / Профиль</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/jScrollPane.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/ie.css">
+		<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+</head>
+<body>
+	<div class="page">
+		<header class="page__header divider" id="js-SF-header"><div class="page__wrapper">
+			<div class="divider__side_rt">
+				<a href="#"><img src="img/logo.png" alt="ИннаВатсон — сложное просто!"></a>
+			</div>
+			<div class="divider__base nav_main__wrapper">
+				<nav class="nav_main divider">
+					<a href="#" class="nav__item">Карта</a>
+					<a href="#" class="nav__item">Устройства</a>
+					<a href="#" class="nav__item nav__item_active">Профиль</a>
+					<a href="#" class="link link__small nav__exit-link">Выход</a>
+				</nav>					
+			</div>
+		</div></header>
+		<!-- //header -->
+
+		<section class="page__content"><div class="page__wrapper" id="js-SF-content">
+			<div class="page__inner">
+
+				<div class="popup">
+					<div class="popup__wrapper">
+						<nav class="popup__header divider">
+							<a href="#" class="popup__close pic pic_cancel" id="js-popup-close"></a>
+							<a href="#" class="popup__header-item popup__header-item_active js-popup-nav" data-count="1">Устройство</a>
+							<a href="#" class="popup__header-item js-popup-nav" data-count="2">История</a>
+							<a href="#" class="popup__header-item js-popup-nav" data-count="3">События</a>	
+						</nav>
+						<div class="divider popup__inner" data-count="1">
+							<div class="popup__content">
+								<div class="divider__side popup__avatar">
+									<img src="img/devices/demo.jpg" alt="Мишка">
+								</div>
+								<div class="divider__base">
+									<div class="divider__side_rt">
+										<div class="popup__charge">67%</div>
+									</div>
+									<div class="divider__base popup__content_hide">
+										<p>Мишка</p> 
+										<p class="article__status_false">Выключено</p>
+										<p>Скорость: 4 км/ч</p> 
+										<p>Последняя передача данных: <span class="article__status_true">27 дн. назад</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="divider popup__inner" data-count="2">
+							<div class="popup__content">
+								<p>За предыдущий период:</p>
+								<form action="">
+									<fieldset class="divider form__line">
+										<label class="divider__side popup__period-label"><input type="radio" />1 час</label>
+										<label class="divider__side popup__period-label"><input type="radio" />24 часа (сутки)</label>
+										<label class="divider__side popup__period-label"><input type="radio" />12 часов (день)</label>
+										<label class="divider__side popup__period-label"><input type="radio" />72 час (двое суток)</label>
+									</fieldset>
+									<fieldset class="divider form__line">
+										<div class="divider__side_rt"> 									
+											<span class="button button_red">
+												<span class="button__text">Показать</span><input type="submit" value="Показать">
+											</span>
+										</div>	
+										<div class="divider__base"> 	
+											<p class="article__callout">
+												На открывающейся временной шкале вы сможете точнее настроить период
+											</p>
+										</div>	
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						<div class="divider popup__inner" data-count="3">
+							<div class="popup__content_wide">
+								<div class="popup__scroll-wrapper js-scrollPane js-scrollPane_vertical">
+									<table class="table table__events table__events_popup">
+										<tr>
+											<td>25.06</td>
+											<td>15:35</td>
+											<td>Нажата тревожная кнопка</td>
+										</tr>
+										<tr>
+											<td>23.06</td>
+											<td>10:12</td>
+											<td>Несанкционированный доступ к секретному устройству в сумочке жены!</td>
+										</tr>
+										<tr>
+											<td>21.06.2012</td>
+											<td>17:00</td>
+											<td>Мишка-панда на прогулке</td>
+										</tr>
+									</table>
+								</div>
+								<div class="divider form__line">
+									<div class="divider__side_rt"> 									
+										<span class="button button_red">
+											<span class="button__text">Все события</span><input type="button" value="Все события">
+										</span>
+									</div>	
+									<div class="divider__base"> 	
+										<p class="article__callout article__callout_hide">
+											Показаны 3 последние события устройства
+										</p>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+				<div id="YMapsID" style="width:100%; height:100%;"></div>
+			</div></section>
+		<!-- //content -->
+		
+	</div>
+	<footer class="page__footer" id="js-SF-footer">
+		<div class="page__wrapper">
+			<div class="page__footer_inner">
+				<div class="js-scrollPane js-scrollPane_horizontal js-scrollPane__devices">
+                <ul class="devices-list">
+					<li class="devices-list__item-wrapper devices-list__item-wrapper_active">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/mishka.jpg" alt="Мишка">
+							<span class="devices-list__name">Мишка</span>
+						</a>
+					</li>
+					<li class="devices-list__item-wrapper">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/demo.jpg" alt="Demo">
+							<span class="devices-list__name">Demo</span>
+						</a>	
+					</li>
+					<li class="devices-list__item-wrapper">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/taras.jpg" alt="Тарас">
+							<span class="devices-list__name">Тарас</span>
+						</a>
+					</li>
+					<li class="devices-list__item-wrapper">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/mishka.jpg" alt="Мишка">
+							<span class="devices-list__name">Школьный рюкзак</span>
+						</a>
+					</li>
+					<li class="devices-list__item-wrapper">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/demo.jpg" alt="Demo">
+							<span class="devices-list__name">Скрытое устройство в сумочке жены</span>
+						</a>	
+					</li>
+					<li class="devices-list__item-wrapper">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/taras.jpg" alt="Тарас">
+							<span class="devices-list__name">Тарас</span>
+						</a>
+					</li>
+					<li class="devices-list__item-wrapper">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/mishka.jpg" alt="Мишка">
+							<span class="devices-list__name">Мишка</span>
+						</a>
+					</li>
+					<li class="devices-list__item-wrapper">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/demo.jpg" alt="Demo">
+							<span class="devices-list__name">Скрытая видеокамера в машине</span>
+						</a>	
+					</li>
+					<li class="devices-list__item-wrapper">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/taras.jpg" alt="Тарас">
+							<span class="devices-list__name">Тарас</span>
+						</a>
+					</li>
+					<li class="devices-list__item-wrapper">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/taras.jpg" alt="Тарас">
+							<span class="devices-list__name">Тарас</span>
+						</a>
+					</li>
+					<li class="devices-list__item-wrapper">
+						<a href="#" class="devices-list__item">
+							<img src="img/devices/taras.jpg" alt="Тарас">
+							<span class="devices-list__name">Тарас</span>
+						</a>
+					</li>
+				</ul>
+				</div>			            
+			</div>
+		</div>
+	</footer>
+	<!-- // sticky footer -->	
+	<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="js/jScrollPane.js"></script>
+	<script type="text/javascript" src="js/iv.js"></script>
+
+	<script src="http://api-maps.yandex.ru/1.1/index.xml?key=AHDL-U8BAAAAmV94egMBkuxKJ8wYqdytrkyyPPAOhGLLS88AAAAAAAAAAACu-d8Tki2wKvUWP_xzvCzY2UIEGw=="
+	type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var map = new YMaps.Map(document.getElementById("YMapsID"));
+            map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 10);
+        }
+    </script>
+</body>
+</html>	
