@@ -1,0 +1,68 @@
+
+<div class="popup">
+  <div class="layout__caption popup__caption">Оформление заказа</div>
+  <form class="form form_question">
+    <fieldset>
+      <div class="popup__bill">
+        <div class="layout__caption layout__caption_small popup__billCaption">Ваш заказ</div>
+        <div class="form__line">
+          <table class="defs defs_blue">
+            <tbody>
+              <tr>
+                <td class="defs__term">
+                  <div class="defs__termInner">Интернет-магазин «Гардеробинс», Редакция «Старт»</div>
+                </td>
+                <td class="defs__content">5600 р.</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="defs defs_blue">
+            <tbody>
+              <tr>
+                <td class="defs__term">
+                  <div class="defs__termInner">1C-Битрикс «Малый бизнес»</div>
+                </td>
+                <td class="defs__content">24900 р.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="form__line offers__total">Итого: 
+          <div class="offers__totalPrice offers__totalPrice_blue">59800 р.</div>
+        </div>
+      </div>
+      <div class="form__line">
+        <label for="name" class="form__label">Ваше имя: <span class="form__required">*</span></label>
+        <input type="text" name="name" id="name" class="form__text"/>
+      </div>
+      <div class="form__line form__line_size_half">
+        <label for="email" class="form__label">Email: <span class="form__required">*</span></label>
+        <input type="email" name="email" id="email" class="form__text"/>
+      </div>
+      <div class="form__alt">На E-mail вы получите ключ от продукта и инструкции по установке и настройке.</div>
+      <div class="form__line form__line_size_half">
+        <label for="phone" class="form__label">Сотовый телефон: <span class="form__required">*</span></label>
+        <input type="text" name="phone" id="phone" class="form__text"/>
+      </div>
+      <div class="form__alt">Мы позвоним вам если будет необходимость уточнить параметры вашего заказа. А так же пришлем SMS о поступлении оплаты.</div>
+      <div class="form__line">
+        <div class="form__label">Выберите способы оплаты: <span class="form__required">*</span></div>
+        <div class="form__checkboxWrapper">
+          <input type="radio" id="popup-item-1" name="radio-1" class="form__checkbox"/>
+          <label for="popup-item-1" class="popup__pay"><img src="dummy/pay-1.jpg" width="50" height="30"/><span class="popup__payCaption">Квитанция Сбербанка</span></label>
+        </div>
+        <div class="form__checkboxWrapper">
+          <input type="radio" id="popup-item-2" name="radio-1" class="form__checkbox"/>
+          <label for="popup-item-2" class="popup__pay"><img src="dummy/pay-2.jpg" width="50" height="30"/><span class="popup__payCaption">Банковская карта MasterCard или Visa</span></label>
+        </div>
+        <div class="form__checkboxWrapper">
+          <input type="radio" id="popup-item-3" name="radio-1" class="form__checkbox"/>
+          <label for="popup-item-3" class="popup__pay">		<img src="dummy/pay-3.jpg" width="50" height="48"/><span class="popup__payCaption">Банковский перевод. В том числе через Интернет-банк</span></label>
+        </div>
+      </div>
+      <div class="form__submitWrapper">
+        <input type="submit" name="s" value="Отправить заказ" class="button button_big"/>
+      </div>
+    </fieldset>
+  </form>
+</div>

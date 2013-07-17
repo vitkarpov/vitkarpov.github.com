@@ -1,0 +1,42 @@
+
+<div class="popup">
+  <div class="layout__caption popup__caption">Задать вопрос</div>
+  <div class="popup__result popup__errors">
+    <p>Вы не заполнили обязательные поля: </p>
+    <ul>
+      <li>Имя</li>
+      <li>Email</li>
+    </ul>
+  </div>
+  <div class="popup__result popup__success">
+    <p>Спасибо, ваша заявка принята!</p>
+  </div>
+  <form class="form form_question">
+    <fieldset>
+      <div class="form__line">
+        <label for="name" class="form__label">Ваше имя<span class="form__required">*</span></label>
+        <input type="text" name="name" id="name" class="form__text form__text_error"/>
+      </div>
+      <div class="form__line form__line_size_half">
+        <label for="email" class="form__label">Email<span class="form__required">*</span></label>
+        <input type="email" name="email" id="email" class="form__text form__text_error"/>
+      </div>
+      <div class="form__line form__line_size_half">
+        <label for="phone" class="form__label">Телефон</label>
+        <input type="text" name="phone" id="phone" class="form__text"/>
+      </div>
+      <div class="form__line">
+        <label for="question" class="form__label">Ваш вопрос<span class="form__required">*</span></label>
+        <textarea name="question" id="question" rows="4" class="form__text form__text_textarea"></textarea>
+      </div>
+      <div class="form__line form__line_size_half">
+        <label for="captcha" class="form__label">Введите символы с картинки<span class="form__required">*</span></label>
+        <div class="form__captchaWrapper"><img src="dummy/captcha.jpg" width="180" height="40"/></div>
+        <input type="text" name="captcha" id="captcha" class="form__text"/>
+      </div>
+      <div class="form__line form__submitWrapper">
+        <input type="submit" name="s" value="Отправить" class="button button_big"/>
+      </div>
+    </fieldset>
+  </form>
+</div>
