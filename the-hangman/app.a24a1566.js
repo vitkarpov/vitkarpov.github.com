@@ -23,4 +23,4 @@ module.exports=function(n,e){e.innerHTML=n};
 },{}],"IBgI":[function(require,module,exports) {
 var e=require("./components/app"),t=require("./lib/state"),n=require("./lib/render"),r=new e,o=function(){t.eventBus.emit("unmount"),n(r.render(s()),document.getElementById("app")),t.eventBus.emit("mount")};function s(){return{started:t.get("started"),won:t.get("won"),lost:t.get("lost"),currWord:t.get("currWord"),misses:t.get("misses"),timer:t.get("timer")}}t.eventBus.on("rerender",o),document.addEventListener("DOMContentLoaded",o);
 },{"./components/app":"mClJ","./lib/state":"cG+5","./lib/render":"OzWR"}]},{},["IBgI"], null)
-//# sourceMappingURL=/the-hangman/app.a24a1566.js.map
+//# sourceMappingURL=app.a24a1566.js.map
